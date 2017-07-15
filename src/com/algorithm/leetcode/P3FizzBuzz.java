@@ -1,4 +1,4 @@
-package com.algorithm;
+package com.algorithm.leetcode;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.algorithm;
+package com.algorithm.leetcode;
 
 /**
  * Created by Administrator
@@ -8,12 +8,12 @@ public class P6NumberComplement {
 
     public static int findComplement(int num) {
         int result = 0;
-        Long bit = Long.highestOneBit(num);
-        int total = 1;
-        for(int i = 1; i < bit; i++){
-            total += Math.pow(2, i);
-        }
-        result = total ^ num;
+//        Long bit = Long.highestOneBit(num);
+//        int total = 1;
+//        for(int i = 1; i < bit; i++){
+//            total += Math.pow(2, i);
+//        }
+//        result = total ^ num;
         return result;
     }
 
