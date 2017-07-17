@@ -4,10 +4,16 @@ import java.util.HashMap;
 
 /**
  * Created by Administrator
- * on 2017/7/12 16:07.
+ * on 2017/7/17 19:31.
  */
-public class P1TwoSum {
+public class LeetCode {
 
+    /**
+     * 计算二和
+     * @param nums
+     * @param target
+     * @return
+     */
     public static int[] twoSums(int[] nums, int target){
         int[] result = new int[2];
         breakFor: for(int i = 0; i < nums.length; i++ ){
@@ -22,6 +28,12 @@ public class P1TwoSum {
         return result;
     }
 
+    /**
+     * 计算二和
+     * @param nums
+     * @param target
+     * @return
+     */
     public static int[] twoSums2(int[] nums, int target){
         int[] result = new int[2];
         HashMap<Integer, Integer> hashMap = new HashMap<>();
@@ -35,12 +47,6 @@ public class P1TwoSum {
             }
         }
         return result;
-    }
-
-    public static void main(String[] args) {
-
-        System.out.println(P1TwoSum.twoSums2(new int[]{1,4,5,9,3}, 4)[0]);
-
     }
 
 }
