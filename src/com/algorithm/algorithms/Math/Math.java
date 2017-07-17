@@ -3,6 +3,7 @@ package com.algorithm.algorithms.Math;
 import edu.princeton.cs.algs4.StdDraw;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * Created by Administrator
@@ -129,14 +130,27 @@ public class Math {
     /**
      * 二分查找
      * @param key
-     * @param a
-     * @return
+     * @param a 从小到大有序数组
+     * @return 数组内索引 -1即为不存在
      */
     public static int BinarySearch(int key, int[] a){
-         
+        int min = 0;
+        int max = a.length - 1;
+        while (min < max){
+            int mid = min + max / 2;
+            if(key > a[mid]){
+                min = mid + 1;
+            } else if (key < a[mid]) {
+                max = mid - 1;
+            } else {
+                return mid;
+            }
+        }
+        return -1;
     }
 
     public static void main(String[] args) {
-        StdDraw.text(4, 4, "asdsd");
+        Scanner sc=new Scanner(System.in);
+        System.out.println(sc.next());
     }
 }
