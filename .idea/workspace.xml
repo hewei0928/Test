@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b323eba-0475-4192-b8e3-34031d72711c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/algorithm/leetcode/P13LongestPalindrome.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P1TwoSum.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P10ValidAnagram.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P11ContainsDuplicate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P12ContainsDuplicateII.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P13LongestPalindrome.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P2ReverseInteger.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P3FizzBuzz.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P4ReverseString.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P5HammingDistance.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P6NumberComplement.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P7EncodeandDecodeTinyURL.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P8ComplexNumberMultiplication.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P9BattleshipsInABoard.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/Test.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java" afterPath="$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,84 +44,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="P10ValidAnagram.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P10ValidAnagram.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="31" column="29" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="32" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="P11ContainsDuplicate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P11ContainsDuplicate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="P12ContainsDuplicateII.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P12ContainsDuplicateII.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="P13LongestPalindrome.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P13LongestPalindrome.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="P3FizzBuzz.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P3FizzBuzz.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="P2ReverseInteger.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P2ReverseInteger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-89">
-              <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LeetCode.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LeetCode.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-              <folding />
+            <state relative-caret-position="454">
+              <caret line="370" column="8" lean-forward="false" selection-start-line="370" selection-start-column="8" selection-end-line="370" selection-end-column="8" />
+              <folding>
+                <element signature="docComment;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#twoSums#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#twoSums#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#twoSums2#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#twoSums2#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#reverse#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#reverse#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#fizzBuzz#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#fizzBuzz#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#reverseString#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#reverseString#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#getInstance#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#getInstance#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#getInstance1#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#findComplement#0;class#LeetCode#0" expanded="false" />
+                <element signature="e#3139#3184#0" expanded="false" />
+                <element signature="docComment;method#findComplement1#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#findComplement1#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;field#urls#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#encode#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#decode#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#complexNumberMultiply#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#complexNumberMultiply#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#isAnagram#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#isAnagram#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#isAnagram1#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#isAnagram1#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#containsDuplicate#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#containsDuplicate#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#containsDuplicate1#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#containsDuplicate1#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#containsNearbyDuplicate#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#containsNearbyDuplicate#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#arrayPairSum#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#arrayPairSum#0;class#LeetCode#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -181,12 +156,18 @@
         <option value="$PROJECT_DIR$/src/com/algorithm/algorithms/Math/Gcd.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/algorithms/Math/Math.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/leetcode/Test.java" />
+        <option value="$PROJECT_DIR$/src/com/algorithm/leetcode/P1TwoSum.java" />
+        <option value="$PROJECT_DIR$/src/com/algorithm/leetcode/P13LongestPalindrome.java" />
+        <option value="$PROJECT_DIR$/src/com/algorithm/leetcode/P2ReverseInteger.java" />
+        <option value="$PROJECT_DIR$/src/com/algorithm/leetcode/P3FizzBuzz.java" />
+        <option value="$PROJECT_DIR$/src/com/algorithm/leetcode/P5HammingDistance.java" />
+        <option value="$PROJECT_DIR$/src/com/algorithm/leetcode/P6NumberComplement.java" />
+        <option value="$PROJECT_DIR$/src/com/algorithm/leetcode/P7EncodeandDecodeTinyURL.java" />
+        <option value="$PROJECT_DIR$/src/com/algorithm/leetcode/P8ComplexNumberMultiplication.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/leetcode/P10ValidAnagram.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/leetcode/P11ContainsDuplicate.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/leetcode/P12ContainsDuplicateII.java" />
-        <option value="$PROJECT_DIR$/src/com/algorithm/leetcode/P1TwoSum.java" />
         <option value="$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java" />
-        <option value="$PROJECT_DIR$/src/com/algorithm/leetcode/P13LongestPalindrome.java" />
       </list>
     </option>
   </component>
@@ -197,10 +178,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-503" />
-    <option name="y" value="69" />
+    <option name="x" value="154" />
+    <option name="y" value="36" />
     <option name="width" value="1370" />
-    <option name="height" value="772" />
+    <option name="height" value="766" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -220,8 +201,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -304,38 +283,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Math" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -345,8 +296,8 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/algs4.jar!/" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -369,7 +320,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.P10ValidAnagram">
+  <component name="RunManager" selected="Application.Test">
     <configuration default="false" name="P6NumberComplement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -866,9 +817,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.P10ValidAnagram" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Math" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="1" class="java.lang.String" itemvalue="Application.P10ValidAnagram" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Math" />
         <item index="3" class="java.lang.String" itemvalue="Application.P8ComplexNumberMultiplication" />
         <item index="4" class="java.lang.String" itemvalue="Application.P6NumberComplement" />
       </list>
@@ -907,38 +858,50 @@
       <workItem from="1500279667182" duration="626000" />
       <workItem from="1500281414093" duration="58000" />
       <workItem from="1500282092986" duration="1755000" />
+      <workItem from="1500339833421" duration="2020000" />
+      <workItem from="1500346922838" duration="298000" />
+      <workItem from="1500357091087" duration="3126000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60170000" />
+    <option name="totallyTimeSpent" value="65614000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-503" y="69" width="1370" height="772" extended-state="0" />
+    <frame x="154" y="36" width="1370" height="766" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22653061" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22153845" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2557252" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15343511" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1060,72 +1023,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P2ReverseInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P2ReverseInteger.java" />
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P2ReverseInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P4ReverseString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P5HammingDistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P6NumberComplement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P8ComplexNumberMultiplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P9BattleshipsInABoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P2ReverseInteger.java" />
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/P1TwoSum.java" />
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithms/union_find/QuickFindUF.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="920">
           <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithms/union_find/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="40" column="1" lean-forward="false" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1133,10 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <element signature="e#654#655#0" expanded="false" />
-            <element signature="e#695#696#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1144,10 +1045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding>
-            <element signature="e#498#499#0" expanded="false" />
-            <element signature="e#539#540#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1180,16 +1077,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P7EncodeandDecodeTinyURL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
@@ -1197,13 +1084,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="2569" column="32" lean-forward="false" selection-start-line="2569" selection-start-column="26" selection-end-line="2569" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P1TwoSum.java" />
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithms/Math/Math.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3358">
@@ -1218,77 +1099,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P2ReverseInteger.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P3FizzBuzz.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P5HammingDistance.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P4ReverseString.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P6NumberComplement.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P7EncodeandDecodeTinyURL.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P8ComplexNumberMultiplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P9BattleshipsInABoard.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P10ValidAnagram.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P11ContainsDuplicate.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P12ContainsDuplicateII.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P13LongestPalindrome.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithms/union_find/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="166">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P10ValidAnagram.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="31" column="29" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="32" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P11ContainsDuplicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="23">
+          <caret line="142" column="23" lean-forward="false" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#5027#5028#0" expanded="false" />
+            <element signature="e#5098#5099#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P12ContainsDuplicateII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P1TwoSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P3FizzBuzz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P2ReverseInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-89">
-          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P13LongestPalindrome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="454">
+          <caret line="370" column="8" lean-forward="false" selection-start-line="370" selection-start-column="8" selection-end-line="370" selection-end-column="8" />
+          <folding>
+            <element signature="docComment;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#twoSums#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#twoSums#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#twoSums2#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#twoSums2#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#reverse#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#reverse#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#fizzBuzz#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#fizzBuzz#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#reverseString#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#reverseString#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#getInstance#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#getInstance#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#getInstance1#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#findComplement#0;class#LeetCode#0" expanded="false" />
+            <element signature="e#3139#3184#0" expanded="false" />
+            <element signature="docComment;method#findComplement1#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#findComplement1#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;field#urls#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#encode#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#decode#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#complexNumberMultiply#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#complexNumberMultiply#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#isAnagram#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#isAnagram#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#isAnagram1#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#isAnagram1#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#containsDuplicate#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#containsDuplicate#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#containsDuplicate1#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#containsDuplicate1#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#containsNearbyDuplicate#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#containsNearbyDuplicate#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#arrayPairSum#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#arrayPairSum#0;class#LeetCode#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
