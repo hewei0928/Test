@@ -318,7 +318,7 @@ public class LeetCode {
      * @param k
      * @return
      */
-    public boolean containsNearbyDuplicate(int[] nums, int k) {
+    public static boolean containsNearbyDuplicate(int[] nums, int k) {
         HashMap<Integer, Integer> map = new HashMap<>();
         HashMap<Integer, Integer> hashMap = new HashMap<>();
         for(int i = 0; i < nums.length; i++){
@@ -350,7 +350,7 @@ public class LeetCode {
      * @param nums
      * @return
      */
-    public int arrayPairSum(int[] nums) {
+    public static int arrayPairSum(int[] nums) {
         int result = 0;
         Arrays.sort(nums);//数组是对象，因而方法中指向数组的值变了，原数组也会改变
         for(int i = 0; i < nums.length; i += 2){
@@ -367,8 +367,8 @@ public class LeetCode {
      * @param words
      * @return
      */
-    public String[] findWords(String[] words) {
-        
-    }
+    /*public static String[] findWords(String[] words) {
+
+    }*/
 
 }

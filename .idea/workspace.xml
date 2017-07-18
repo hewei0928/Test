@@ -2,20 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b323eba-0475-4192-b8e3-34031d72711c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P10ValidAnagram.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P11ContainsDuplicate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P12ContainsDuplicateII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P13LongestPalindrome.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P2ReverseInteger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P3FizzBuzz.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P4ReverseString.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P5HammingDistance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P6NumberComplement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P7EncodeandDecodeTinyURL.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P8ComplexNumberMultiplication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/P9BattleshipsInABoard.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/Test.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java" afterPath="$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,64 +14,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Math.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Math.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithms/Math/Math.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3358">
+            <state relative-caret-position="371">
               <caret line="153" column="36" lean-forward="false" selection-start-line="153" selection-start-column="36" selection-end-line="153" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#2022#2023#0" expanded="false" />
-                <element signature="e#2079#2080#0" expanded="false" />
-                <element signature="e#2126#2127#0" expanded="false" />
-                <element signature="e#2176#2177#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LeetCode.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="370" column="8" lean-forward="false" selection-start-line="370" selection-start-column="8" selection-end-line="370" selection-end-column="8" />
-              <folding>
-                <element signature="docComment;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#twoSums#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#twoSums#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#twoSums2#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#twoSums2#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#reverse#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#reverse#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#fizzBuzz#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#fizzBuzz#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#reverseString#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#reverseString#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#getInstance#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#getInstance#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#getInstance1#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#findComplement#0;class#LeetCode#0" expanded="false" />
-                <element signature="e#3139#3184#0" expanded="false" />
-                <element signature="docComment;method#findComplement1#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#findComplement1#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;field#urls#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#encode#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#decode#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#complexNumberMultiply#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#complexNumberMultiply#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#isAnagram#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#isAnagram#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#isAnagram1#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#isAnagram1#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#containsDuplicate#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#containsDuplicate#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#containsDuplicate1#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#containsDuplicate1#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#containsNearbyDuplicate#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#containsNearbyDuplicate#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#arrayPairSum#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#arrayPairSum#0;class#LeetCode#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -178,10 +112,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="154" />
-    <option name="y" value="36" />
-    <option name="width" value="1370" />
-    <option name="height" value="766" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -201,6 +135,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -286,8 +222,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -861,11 +795,12 @@
       <workItem from="1500339833421" duration="2020000" />
       <workItem from="1500346922838" duration="298000" />
       <workItem from="1500357091087" duration="3126000" />
+      <workItem from="1500362113816" duration="40000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65614000" />
+    <option name="totallyTimeSpent" value="65654000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -877,7 +812,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="154" y="36" width="1370" height="766" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -888,20 +823,20 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22153845" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22153845" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15343511" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15582451" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1085,20 +1020,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P1TwoSum.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithms/Math/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3358">
-          <caret line="153" column="36" lean-forward="false" selection-start-line="153" selection-start-column="36" selection-end-line="153" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2022#2023#0" expanded="false" />
-            <element signature="e#2079#2080#0" expanded="false" />
-            <element signature="e#2126#2127#0" expanded="false" />
-            <element signature="e#2176#2177#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P2ReverseInteger.java" />
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P3FizzBuzz.java" />
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/P5HammingDistance.java" />
@@ -1132,8 +1053,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="370" column="8" lean-forward="false" selection-start-line="370" selection-start-column="8" selection-end-line="370" selection-end-column="8" />
+        <state relative-caret-position="339">
+          <caret line="369" column="6" lean-forward="false" selection-start-line="369" selection-start-column="4" selection-end-line="371" selection-end-column="7" />
           <folding>
             <element signature="docComment;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#twoSums#0;class#LeetCode#0" expanded="false" />
@@ -1171,6 +1092,14 @@
             <element signature="docComment;method#arrayPairSum#0;class#LeetCode#0" expanded="false" />
             <element signature="method#arrayPairSum#0;class#LeetCode#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithms/Math/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="153" column="36" lean-forward="false" selection-start-line="153" selection-start-column="36" selection-end-line="153" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
