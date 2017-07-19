@@ -93,18 +93,19 @@ public class LeetCode {
         return  result;
     }
 
-    //待解决
     /**
      * 反转字符串
      * @param s
      * @return
      */
     public static String reverseString(String s) {
-        String result = null;
-        if( s == null){
-            return result;
+        char[] chars = s.toCharArray();
+        for (int i = 0; i < chars.length / 2; i++){
+            char a = chars[i];
+            chars[i] = chars[chars.length - 1 - i];
+            chars[chars.length - 1 - i] = a;
         }
-        return result;
+        return new String(chars);
     }
 
     /**
@@ -363,7 +364,7 @@ public class LeetCode {
      * Given a List of words,
      * return the words that can be typed using letters of alphabet on
      * only one row's of American keyboard like the image below.
-     * 找出使用一行键盘字幕即可打出的字符
+     * 找出使用一行键盘字幕即可打出的字符.
      * @param words
      * @return
      */
@@ -371,4 +372,130 @@ public class LeetCode {
 
     }*/
 
+    /**
+     * 计算 0 ~ n 每个数二进制1的个数
+     * @param num
+     * @return
+     */
+    public int[] countBits(int num) {
+        int[] result = new int[num + 1];
+        for(int i = 0; i <= num; i++){
+            result[i] = Integer.bitCount(i);
+        }
+        return result;
+    }
+
+    //细看
+    /**
+     * 计算 0 ~ n 每个数二进制1的个数
+     * @param num
+     * @return
+     */
+    public int[] countBits1(int num) {
+        int[] f = new int[num + 1];
+        for (int i=1; i<=num; i++) f[i] = f[i >> 1] + (i & 1);
+        return f;
+    }
+
+    /**
+     * 反转一句话内的所有单词
+     * @param s
+     * @return
+     */
+    public String reverseWords(String s) {
+        StringBuffer result = new StringBuffer();
+        String[] strs = s.split(" ");
+        for(int i = 0; i < strs.length; i++){
+            char[] chars = strs[i].toCharArray();
+            for (int k = 0; k < chars.length / 2; k++){
+                char a = chars[k];
+                chars[k] = chars[chars.length - 1 - k];
+                chars[chars.length - 1 - k] = a;
+            }
+            strs[i] = new String(chars);
+            result.append(strs[i]);
+            if(i == strs.length - 1){
+                break;
+            }
+            result.append(" ");
+        }
+        return result.toString();
+    }
+
+    /**
+     * 反转一句话内的所有单词
+     * @param s
+     * @return
+     */
+    public String reverseWords1(String s) {
+        String words[] = s.split(" ");
+        StringBuilder res=new StringBuilder();
+        for (String word: words)
+            res.append(new StringBuffer(word).reverse().toString() + " ");
+        return res.toString().trim();
+    }
+
+
+    //细看
+    /**
+     * 给定一个字符串和一个整数k，
+     * 需要从字符串的开始计算每个2K字符的第一个k个字符。
+     * 如果剩下的字符小于k，则将它们全部反转。
+     * 如果小于2K，但大于或等于K字符，
+     * 则反转第一个k字符后续字符保持不变
+     * @param s
+     * @param k
+     * @return
+     */
+    public String reverseStr(String s, int k) {
+        char[] chars = s.toCharArray();
+        int l = s.length() / (2 * k); //有多少个2k
+        int j = s.length() % (2 * k); //最后一个字符串长度;
+        for(int i = 0; i < l; i ++){
+            for(int m = 0; m < k / 2; m++){
+                char a = chars[i * 2 * k + m];
+                chars[i * 2 * k + m] = chars[i * 2 * k + k - 1 - m];
+                chars[i * 2 * k + k - 1 - m] = a;
+            }
+        }
+        if(j >= k){
+            for(int m = 0; m < k / 2; m++){
+                char a = chars[l * 2 * k + m];
+                chars[l * 2 * k + m] = chars[l * 2 * k + k - 1 - m];
+                chars[l * 2 * k + k - 1 - m] = a;
+            }
+        } else {
+            for(int m = 0; m < j / 2; m++){
+                char a = chars[l * 2 * k + m];
+                chars[l * 2 * k + m] = chars[l * 2 * k + j - 1 - m];
+                chars[l * 2 * k + j - 1 - m] = a;
+            }
+        }
+
+        return new String(chars);
+    }
+
+
+    //细看
+    /**
+     * 给定一个字符串和一个整数k，
+     * 需要从字符串的开始计算每个2K字符的第一个k个字符。
+     * 如果剩下的字符小于k，则将它们全部反转。
+     * 如果小于2K，但大于或等于K字符，
+     * 则反转第一个k字符后续字符保持不变
+     * @param s
+     * @param k
+     * @return
+     */
+    public String reverseStr1(String s, int k) {
+        char[] ca = s.toCharArray();
+        for (int left = 0; left < ca.length; left += 2 * k) {
+            for (int i = left, j = Math.min(left + k - 1, ca.length - 1); i < j; i++, j--) {
+                char tmp = ca[i];
+                ca[i] = ca[j];
+                ca[j] = tmp;
+            }
+        }
+        return new String(ca);
+    }
 }
