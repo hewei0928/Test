@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b323eba-0475-4192-b8e3-34031d72711c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java" afterPath="$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +17,8 @@
       <file leaf-file-name="LeetCode.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="496" column="13" lean-forward="true" selection-start-line="496" selection-start-column="13" selection-end-line="496" selection-end-column="13" />
+            <state relative-caret-position="682">
+              <caret line="567" column="10" lean-forward="true" selection-start-line="567" selection-start-column="10" selection-end-line="567" selection-end-column="10" />
               <folding>
                 <element signature="docComment;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#twoSums#0;class#LeetCode#0" expanded="false" />
@@ -57,12 +56,22 @@
                 <element signature="method#containsNearbyDuplicate#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#arrayPairSum#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#arrayPairSum#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#countBits#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#countBits#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#countBits1#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#countBits1#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#reverseWords#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#reverseWords#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#reverseWords1#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#reverseWords1#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#reverseStr#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#reverseStr#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#reverseStr1#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#reverseStr1#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#islandPerimeter#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#islandPerimeter#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#islandPerimeter1#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#islandPerimeter1#0;class#LeetCode#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -156,8 +165,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="637" />
-    <option name="y" value="114" />
+    <option name="x" value="524" />
+    <option name="y" value="134" />
     <option name="width" value="1370" />
     <option name="height" value="766" />
   </component>
@@ -841,12 +850,12 @@
       <workItem from="1500357091087" duration="3126000" />
       <workItem from="1500362113816" duration="40000" />
       <workItem from="1500425748443" duration="735000" />
-      <workItem from="1500427751252" duration="6061000" />
+      <workItem from="1500427751252" duration="9947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72450000" />
+    <option name="totallyTimeSpent" value="76336000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -858,7 +867,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="637" y="114" width="1370" height="766" extended-state="0" />
+    <frame x="524" y="134" width="1370" height="766" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1102,8 +1111,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="496" column="13" lean-forward="true" selection-start-line="496" selection-start-column="13" selection-end-line="496" selection-end-column="13" />
+        <state relative-caret-position="682">
+          <caret line="567" column="10" lean-forward="true" selection-start-line="567" selection-start-column="10" selection-end-line="567" selection-end-column="10" />
           <folding>
             <element signature="docComment;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#twoSums#0;class#LeetCode#0" expanded="false" />
@@ -1141,12 +1150,22 @@
             <element signature="method#containsNearbyDuplicate#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#arrayPairSum#0;class#LeetCode#0" expanded="false" />
             <element signature="method#arrayPairSum#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#countBits#0;class#LeetCode#0" expanded="false" />
             <element signature="method#countBits#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#countBits1#0;class#LeetCode#0" expanded="false" />
             <element signature="method#countBits1#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#reverseWords#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#reverseWords#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#reverseWords1#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#reverseWords1#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#reverseStr#0;class#LeetCode#0" expanded="false" />
             <element signature="method#reverseStr#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#reverseStr1#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#reverseStr1#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#islandPerimeter#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#islandPerimeter#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#islandPerimeter1#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#islandPerimeter1#0;class#LeetCode#0" expanded="false" />
           </folding>
         </state>
       </provider>

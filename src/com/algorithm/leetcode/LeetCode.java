@@ -377,7 +377,7 @@ public class LeetCode {
      * @param num
      * @return
      */
-    public int[] countBits(int num) {
+    public static int[] countBits(int num) {
         int[] result = new int[num + 1];
         for(int i = 0; i <= num; i++){
             result[i] = Integer.bitCount(i);
@@ -391,7 +391,7 @@ public class LeetCode {
      * @param num
      * @return
      */
-    public int[] countBits1(int num) {
+    public static int[] countBits1(int num) {
         int[] f = new int[num + 1];
         for (int i=1; i<=num; i++) f[i] = f[i >> 1] + (i & 1);
         return f;
@@ -402,7 +402,7 @@ public class LeetCode {
      * @param s
      * @return
      */
-    public String reverseWords(String s) {
+    public static String reverseWords(String s) {
         StringBuffer result = new StringBuffer();
         String[] strs = s.split(" ");
         for(int i = 0; i < strs.length; i++){
@@ -427,7 +427,7 @@ public class LeetCode {
      * @param s
      * @return
      */
-    public String reverseWords1(String s) {
+    public static String reverseWords1(String s) {
         String words[] = s.split(" ");
         StringBuilder res=new StringBuilder();
         for (String word: words)
@@ -447,7 +447,7 @@ public class LeetCode {
      * @param k
      * @return
      */
-    public String reverseStr(String s, int k) {
+    public static String reverseStr(String s, int k) {
         char[] chars = s.toCharArray();
         int l = s.length() / (2 * k); //有多少个2k
         int j = s.length() % (2 * k); //最后一个字符串长度;
@@ -487,7 +487,7 @@ public class LeetCode {
      * @param k
      * @return
      */
-    public String reverseStr1(String s, int k) {
+    public static String reverseStr1(String s, int k) {
         char[] ca = s.toCharArray();
         for (int left = 0; left < ca.length; left += 2 * k) {
             for (int i = left, j = Math.min(left + k - 1, ca.length - 1); i < j; i++, j--) {
@@ -498,4 +498,91 @@ public class LeetCode {
         }
         return new String(ca);
     }
+
+    /**
+     * Island Perimeter
+     * 二维整数网格的地图，
+     * 其中1代表土地，0代表水。
+     * 网格单元是水平的/垂直的（不是对角的）。
+     * 网格完全被水包围，而且正好有一个岛（即，一个或多个相连的陆地单元）。
+     * 这个岛没有“湖泊”（里面的水与岛上的水没有联系）。
+     * 一个单元格是边长为1的正方形。
+     * 网格为矩形，宽度和高度不超过100。
+     * 确定该岛的周长。
+     * @param grid
+     * @return
+     */
+    public static int islandPerimeter(int[][] grid) {
+        int perimeter = 0;
+        for(int i = 0; i < grid.length; i++){
+            for(int j = 0; j < grid[i].length; j++){
+                if(grid[i][j] == 1){
+                    perimeter += 4;
+                    if(i - 1 >= 0 && grid[i - 1][j] == 1){
+                        perimeter --;
+                    }
+                    if(i + 1 < grid.length && grid[i + 1][j] == 1){
+                        perimeter --;
+                    }
+                    if(j - 1 >= 0 && grid[i][j - 1] == 1){
+                        perimeter--;
+                    }
+                    if(j + 1 < grid[i].length && grid[i][j + 1] == 1){
+                        perimeter--;
+                    }
+                }
+            }
+        }
+        return perimeter;
+    }
+
+    /**
+     * Island Perimeter
+     * 二维整数网格的地图，
+     * 其中1代表土地，0代表水。
+     * 网格单元是水平的/垂直的（不是对角的）。
+     * 网格完全被水包围，而且正好有一个岛（即，一个或多个相连的陆地单元）。
+     * 这个岛没有“湖泊”（里面的水与岛上的水没有联系）。
+     * 一个单元格是边长为1的正方形。
+     * 网格为矩形，宽度和高度不超过100。
+     * 确定该岛的周长。
+     * @param grid
+     * @return
+     */
+    public static int islandPerimeter1(int[][] grid) {
+        if (grid == null || grid.length == 0 || grid[0].length == 0) return 0;
+        int result = 0;
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
+                if (grid[i][j] == 1) {
+                    result += 4;
+                    if (i > 0 && grid[i-1][j] == 1) result -= 2;
+                    if (j > 0 && grid[i][j-1] == 1) result -= 2;
+                }
+            }
+        }
+        return result;
+    }
+
+
+    //重做一遍
+    /**
+     * Reshape the Matrix
+     * 数组转换为r * c 数组
+     * @param nums
+     * @param r
+     * @param c
+     * @return
+     */
+    public int[][] matrixReshape(int[][] nums, int r, int c) {
+        if(r * c != nums.length * nums[0].length){
+            return nums;
+        }
+        int[][] rc = new int[r][c];
+        for(int i = 0; i < r * c; i++){
+            rc[i / c][i % c] = nums[i / nums[0].length][i % nums[0].length];
+        }
+        return  rc;
+    }
+
 }
