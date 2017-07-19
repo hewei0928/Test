@@ -574,7 +574,7 @@ public class LeetCode {
      * @param c
      * @return
      */
-    public int[][] matrixReshape(int[][] nums, int r, int c) {
+    public static int[][] matrixReshape(int[][] nums, int r, int c) {
         if(r * c != nums.length * nums[0].length){
             return nums;
         }
@@ -585,4 +585,64 @@ public class LeetCode {
         return  rc;
     }
 
+    //用union-find类重做一遍
+    /**
+     * union-find 问题
+     * Friend Circles
+     * @param M
+     * @return
+     */
+    public static int findCircleNum(int[][] M) {
+        int num = 1;
+        int N = M.length;
+        int[] students = new int[N];
+        for(int i = 0; i < students.length; i++){
+            students[i] = i;
+        }
+        for(int i = 0; i < N; i++){
+            for(int j = 0; j < N; j++){
+                if(M[i][j] == 1){
+                    for(int k = 0; k < N; k++){
+                        if(students[k] == students[i]){
+                            students[k] = students[j];
+                        }
+                    }
+                }
+            }
+        }
+        Arrays.sort(students);
+        for(int i = 0; i < N-1; i++){
+            if(students[i] != students[i + 1]){
+                num++;
+            }
+        }
+        return num;
+    }
+
+
+    /**
+     * union-find 问题
+     * Friend Circles
+     * @param M
+     * @return
+     */
+    public static void dfs(int[][] M, int[] visited, int i) {
+        for (int j = 0; j < M.length; j++) {
+            if (M[i][j] == 1 && visited[j] == 0) {
+                visited[j] = 1;
+                dfs(M, visited, j);
+            }
+        }
+    }
+    public static int findCircleNum1(int[][] M) {
+        int[] visited = new int[M.length];
+        int count = 0;
+        for (int i = 0; i < M.length; i++) {
+            if (visited[i] == 0) {
+                dfs(M, visited, i);
+                count++;
+            }
+        }
+        return count;
+    }
 }
