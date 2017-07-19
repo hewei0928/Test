@@ -645,4 +645,83 @@ public class LeetCode {
         }
         return count;
     }
+
+
+    //待解决
+    /**
+     * union-find 问题
+     * @param grid
+     * @return
+     */
+    public static int numIslands(char[][] grid) {
+        int r = grid.length;
+        int col = grid[0].length;
+        int[] nums = new int[r * col];
+        for(int i = 0; i < r * col; i++){
+            nums[i] = i;
+        }
+        for(int i = 0; i < r; i++){
+            for(int j = 0; j < col; j++){
+                if(grid[i][j] == '1' && grid[i][j-1] == '1' && (j - 1) > 0){
+                    for(int k = 0; k < r * col; k++){
+                        if(nums[k] == nums[i * j]){
+                            nums[k] = nums[i *(j - 1)];
+                        }
+                    }
+                }
+
+                if(grid[i][j] == '1' && grid[i][j+1] == '1' && (j + 1) < col){
+                    for(int k = 0; k < r * col; k++){
+                        if(nums[k] == nums[i * j]){
+                            nums[k] = nums[i *(j + 1)];
+                        }
+                    }
+                }
+
+                if(grid[i - 1][j] == '1' && grid[i][j] == '1' && (i - 1) > 0){
+                    for(int k = 0; k < r * col; k++){
+                        if(nums[k] == nums[i * j]){
+                            nums[k] = nums[(i - 1) *j];
+                        }
+                    }
+                }
+
+                if(grid[i][j] == '1' && grid[i][j] == '1' && (i + 1) < r){
+                    for(int k = 0; k < r * col; k++){
+                        if(nums[k] == nums[i * j]){
+                            nums[k] = nums[(i + 1) * j];
+                        }
+                    }
+                }
+            }
+        }
+
+        int num = 1;
+        Arrays.sort(nums);
+        for(int i = 0; i < nums.length-1; i++){
+            if(nums[i] != nums[i + 1]){
+                num++;
+            }
+        }
+        return num;
+    }
+
+
+    /**
+     * Find All Duplicates in an Array
+     * 给定一个整数数组，1≤a[i]≤N（N =大小数组）,数组元素出现一次或两次。
+     查找数组中出现两次的所有元素。
+     * @param nums
+     * @return
+     */
+    public List<Integer> findDuplicates(int[] nums) {
+        List<Integer> list = new ArrayList<>();
+        Arrays.sort(nums);
+        for(int i = 0; i < nums.length - 1; i++){
+            if(nums[i] == nums[i + 1]){
+                list.add(nums[i]);
+            }
+        }
+        return list;
+    }
 }
