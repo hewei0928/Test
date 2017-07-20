@@ -724,4 +724,61 @@ public class LeetCode {
         }
         return list;
     }
+
+    /**
+     * Single Number
+     * 给定一组整数，除了一个元素外，每个元素都出现两次。找到只出现一次的那一个。
+     * @param nums
+     * @return
+     */
+    public int singleNumber(int[] nums) {
+        Arrays.sort(nums);
+        if(nums.length == 1){
+            return nums[0];
+        }
+        for(int i = 0; i < nums.length; i++) {
+            if (i == 0 ) {
+                if(nums[i] != nums[i + 1]){
+                    return nums[i];
+                } else {
+                    continue;
+                }
+            }
+            if (i == nums.length - 1) {
+                if(nums[i - 1] != nums[i]) {
+                    return nums[i];
+                } else {
+                    continue;
+                }
+            }
+            if (nums[i] != nums[i - 1] && nums[i] != nums[i + 1]) {
+                return nums[i];
+            }
+        }
+        return Integer.MIN_VALUE;
+    }
+
+    //最优解，值得记住
+    /**
+     * Single Number
+     * first , we have to know the bitwise XOR in java
+     * 0 ^ N = N
+     * N ^ N = 0
+     * So..... if N is the single number
+     * N1 ^ N1 ^ N2 ^ N2 ^..............^ Nx ^ Nx ^ N
+     * = (N1^N1) ^ (N2^N2) ^..............^ (Nx^Nx) ^ N
+     * = 0 ^ 0 ^ ..........^ 0 ^ N
+     * = N
+     * @param nums
+     * @return
+     */
+    public int singleNumber1(int[] nums){
+        int result = 0;
+        for (int i = 0; i < nums.length; i++){
+            result ^= nums[i];
+        }
+        return result;
+    }
+
+    
 }
