@@ -17,8 +17,8 @@
       <file leaf-file-name="LeetCode.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="782" column="4" lean-forward="false" selection-start-line="782" selection-start-column="4" selection-end-line="782" selection-end-column="4" />
+            <state relative-caret-position="-397">
+              <caret line="774" column="17" lean-forward="false" selection-start-line="774" selection-start-column="17" selection-end-line="774" selection-end-column="17" />
               <folding>
                 <element signature="docComment;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#twoSums#0;class#LeetCode#0" expanded="false" />
@@ -867,12 +867,12 @@
       <workItem from="1500425748443" duration="735000" />
       <workItem from="1500427751252" duration="12520000" />
       <workItem from="1500453844208" duration="2577000" />
-      <workItem from="1500514839991" duration="3583000" />
+      <workItem from="1500514839991" duration="5094000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85069000" />
+    <option name="totallyTimeSpent" value="86580000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -884,7 +884,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1132,8 +1132,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="782" column="4" lean-forward="false" selection-start-line="782" selection-start-column="4" selection-end-line="782" selection-end-column="4" />
+        <state relative-caret-position="-397">
+          <caret line="774" column="17" lean-forward="false" selection-start-line="774" selection-start-column="17" selection-end-line="774" selection-end-column="17" />
           <folding>
             <element signature="docComment;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#twoSums#0;class#LeetCode#0" expanded="false" />

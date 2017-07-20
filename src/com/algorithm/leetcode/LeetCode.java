@@ -714,7 +714,7 @@ public class LeetCode {
      * @param nums
      * @return
      */
-    public List<Integer> findDuplicates(int[] nums) {
+    public static List<Integer> findDuplicates(int[] nums) {
         List<Integer> list = new ArrayList<>();
         Arrays.sort(nums);
         for(int i = 0; i < nums.length - 1; i++){
@@ -731,7 +731,7 @@ public class LeetCode {
      * @param nums
      * @return
      */
-    public int singleNumber(int[] nums) {
+    public static int singleNumber(int[] nums) {
         Arrays.sort(nums);
         if(nums.length == 1){
             return nums[0];
@@ -772,7 +772,7 @@ public class LeetCode {
      * @param nums
      * @return
      */
-    public int singleNumber1(int[] nums){
+    public static int singleNumber1(int[] nums){
         int result = 0;
         for (int i = 0; i < nums.length; i++){
             result ^= nums[i];
@@ -780,5 +780,38 @@ public class LeetCode {
         return result;
     }
 
-    
+    /**
+     * Max Consecutive Ones
+     * 0, 1组成的数组中，查找最长的1序列
+     * @param nums
+     * @return
+     */
+    public static int findMaxConsecutiveOnes(int[] nums) {
+        int result = 0;
+        StringBuffer num = new StringBuffer();
+        for(int i = 0; i < nums.length; i++){
+            num.append(nums[i]);
+        }
+        String[] arr = num.toString().split("0");
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i].length() > result){
+                result = arr[i].length();
+            }
+        }
+        return result;
+    }
+
+
+    /**
+     * Max Consecutive Ones
+     * 0, 1组成的数组中，查找最长的1序列
+     * @param nums
+     * @return
+     */
+    public static int findMaxConsecutiveOnes1(int[] nums) {
+        int maxHere = 0, max = 0;
+        for (int n : nums)
+            max = Math.max(max, maxHere = n == 0 ? 0 : maxHere + 1);
+        return max;
+    }
 }
