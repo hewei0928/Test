@@ -710,7 +710,7 @@ public class LeetCode {
     /**
      * Find All Duplicates in an Array
      * 给定一个整数数组，1≤a[i]≤N（N =大小数组）,数组元素出现一次或两次。
-     查找数组中出现两次的所有元素。
+     * 查找数组中出现两次的所有元素。
      * @param nums
      * @return
      */
@@ -802,6 +802,7 @@ public class LeetCode {
     }
 
 
+    //细看
     /**
      * Max Consecutive Ones
      * 0, 1组成的数组中，查找最长的1序列
@@ -813,5 +814,67 @@ public class LeetCode {
         for (int n : nums)
             max = Math.max(max, maxHere = n == 0 ? 0 : maxHere + 1);
         return max;
+    }
+
+    //待解决
+    /**
+     * 将一个数字转换为7进制
+     * @param num
+     * @return
+     */
+    public static String convertToBase7(int num) {
+        String result = "";
+        while(num > 7){
+            int re = num % 7;
+            num /= 7;
+            result = re + result;
+        }
+        result = num + result;
+        return result;
+    }
+
+    /**
+     * Move Zeroes
+     * Given an array nums,
+     * write a function to move all 0's to the end of it
+     * while maintaining the relative order of the non-zero elements.
+     * @param nums
+     */
+    public static void moveZeroes(int[] nums) {
+        for(int i = 0; i < nums.length; i++){
+            if(nums[i] == 0){
+                for(int j = i + 1; j < nums.length; j++){
+                    if(nums[j] == 0){
+                        continue;
+                    } else {
+                        int num = nums[i];
+                        nums[i] = nums[j];
+                        nums[j] = num;
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    //细看，记住，理解
+    /**
+     * Move Zeroes
+     * Given an array nums,
+     * write a function to move all 0's to the end of it
+     * while maintaining the relative order of the non-zero elements.
+     * @param nums
+     */
+    public void moveZeroes1(int[] nums) {
+        if (nums == null || nums.length == 0) return;
+
+        int insertPos = 0;
+        for (int num: nums) {
+            if (num != 0) nums[insertPos++] = num;
+        }
+
+        while (insertPos < nums.length) {
+            nums[insertPos++] = 0;
+        }
     }
 }
