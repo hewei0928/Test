@@ -865,7 +865,7 @@ public class LeetCode {
      * while maintaining the relative order of the non-zero elements.
      * @param nums
      */
-    public void moveZeroes1(int[] nums) {
+    public static void moveZeroes1(int[] nums) {
         if (nums == null || nums.length == 0) return;
 
         int insertPos = 0;
@@ -876,5 +876,84 @@ public class LeetCode {
         while (insertPos < nums.length) {
             nums[insertPos++] = 0;
         }
+    }
+
+    /**
+     * Excel Sheet Column Number
+     * excle ADF 转 数字
+     * @param s
+     * @return
+     */
+    public static int titleToNumber(String s) {
+        int result = 0;
+        char[] chars = s.toCharArray();
+        for(int i = 0; i < chars.length; i++){
+            result += ((int)chars[i] - 64) * Math.pow(24 , chars.length - 1 - i);
+        }
+        return result;
+    }
+
+    /**
+     * Majority Element
+     * 找出数组中出现次数超出n/2次的数，假设该数一定存在
+     * @param nums
+     * @return
+     */
+    public static int majorityElement(int[] nums) {
+        Arrays.sort(nums);
+        int j = 0;
+        if(nums.length == 1){
+            return nums[0];
+        }
+        for(int i = 0; i < nums.length - 1; i++){
+            if(nums[i] == nums[i + 1]){
+                j++;
+            } else {
+                j = 0;
+            }
+            if(j >= nums.length / 2){
+                return nums[i];
+            }
+        }
+        return nums[0];
+    }
+
+
+    //细看
+    /**
+     *
+     * Majority Element
+     * 找出数组中出现次数超出n/2次的数，假设该数一定存在
+     * @param num
+     * @return
+     */
+    public static int majorityElement1(int[] num) {
+        int major=num[0], count = 1;
+        for(int i=1; i<num.length;i++){
+            if(count==0){
+                count++;
+                major=num[i];
+            }else if(major==num[i]){
+                count++;
+            }else count--;
+
+        }
+        return major;
+    }
+
+
+    /**
+     * Missing Number
+     * @param nums
+     * @return
+     */
+    public static int missingNumber(int[] nums) {
+        int sum = 0;
+        int sum2 = 0;
+        for(int i = 0; i < nums.length; i++){
+            sum += nums[i];
+            sum2 += (i + 1);
+        }
+        return sum2 - sum;
     }
 }
