@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b323eba-0475-4192-b8e3-34031d72711c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/algorithm/leetcode/TreeNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java" afterPath="$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +17,8 @@
       <file leaf-file-name="LeetCode.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="1153" column="22" lean-forward="false" selection-start-line="1153" selection-start-column="22" selection-end-line="1153" selection-end-column="22" />
+            <state relative-caret-position="850">
+              <caret line="1012" column="0" lean-forward="false" selection-start-line="1012" selection-start-column="0" selection-end-line="1012" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#twoSums#0;class#LeetCode#0" expanded="false" />
@@ -109,12 +107,12 @@
                 <element signature="method#missingNumber#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#addDigits#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#addDigits#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#detectCapitalUse#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#findLUSlength#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#canConstruct#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#canConstruct#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#canConstruct1#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#canConstruct1#0;class#LeetCode#0" expanded="false" />
+                <element signature="e#25585#25586#0" expanded="true" />
+                <element signature="e#25648#25649#0" expanded="true" />
+                <element signature="e#25792#25793#0" expanded="true" />
+                <element signature="e#25866#25867#0" expanded="true" />
+                <element signature="e#30175#30176#0" expanded="true" />
+                <element signature="e#30222#30223#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -929,12 +927,12 @@
       <workItem from="1500867190549" duration="594000" />
       <workItem from="1500885805104" duration="8000" />
       <workItem from="1501741613944" duration="11854000" />
-      <workItem from="1501827329900" duration="194000" />
+      <workItem from="1501827329900" duration="1379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108782000" />
+    <option name="totallyTimeSpent" value="109967000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1197,8 +1195,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="1153" column="22" lean-forward="false" selection-start-line="1153" selection-start-column="22" selection-end-line="1153" selection-end-column="22" />
+        <state relative-caret-position="850">
+          <caret line="1012" column="0" lean-forward="false" selection-start-line="1012" selection-start-column="0" selection-end-line="1012" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#twoSums#0;class#LeetCode#0" expanded="false" />
@@ -1287,12 +1285,12 @@
             <element signature="method#missingNumber#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#addDigits#0;class#LeetCode#0" expanded="false" />
             <element signature="method#addDigits#0;class#LeetCode#0" expanded="false" />
-            <element signature="docComment;method#detectCapitalUse#0;class#LeetCode#0" expanded="false" />
-            <element signature="docComment;method#findLUSlength#0;class#LeetCode#0" expanded="false" />
-            <element signature="docComment;method#canConstruct#0;class#LeetCode#0" expanded="false" />
-            <element signature="method#canConstruct#0;class#LeetCode#0" expanded="false" />
-            <element signature="docComment;method#canConstruct1#0;class#LeetCode#0" expanded="false" />
-            <element signature="method#canConstruct1#0;class#LeetCode#0" expanded="false" />
+            <element signature="e#25585#25586#0" expanded="true" />
+            <element signature="e#25648#25649#0" expanded="true" />
+            <element signature="e#25792#25793#0" expanded="true" />
+            <element signature="e#25866#25867#0" expanded="true" />
+            <element signature="e#30175#30176#0" expanded="true" />
+            <element signature="e#30222#30223#0" expanded="true" />
           </folding>
         </state>
       </provider>
