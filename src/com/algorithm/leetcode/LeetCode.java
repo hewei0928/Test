@@ -49,6 +49,22 @@ public class LeetCode {
         return result;
     }
 
+
+
+    //待做
+    /**
+     * 28. Implement strStr()
+     * 实现类java String。indexOf方法
+     * @param haystack
+     * @param needle
+     * @return
+     */
+    public int strStr(String haystack, String needle) {
+        return haystack.indexOf(needle);
+    }
+
+
+
     //???
     /**
      * ??????????
@@ -1001,6 +1017,37 @@ public class LeetCode {
         return a.equals(b) ? -1 : Math.max(a.length(), b.length());
     }
 
+    //while循环的使用，对半顺序反转的使用
+    /**
+     * 345. Reverse Vowels of a String
+     * 反转字符串中元音字母的顺序
+     * @param s
+     * @return
+     */
+    public String reverseVowels(String s) {
+        String vowels = "aeiouAEIOU";
+        char[] arr = s.toCharArray();
+        int start = 0;
+        int end = arr.length - 1;
+        while(start < end){
+            while(start < end && !vowels.contains(arr[start] + "")){
+                start ++;
+            }
+
+            while(start < end && !vowels.contains(arr[end] + "")){
+                end--;
+            }
+
+            char a = arr[start];
+            arr[start] = arr[end];
+            arr[end] = a;
+            start ++;
+            end --;
+        }
+        return new String(arr);
+    }
+
+
 
     //????????
     /**
@@ -1053,50 +1100,6 @@ public class LeetCode {
         return true;
     }
 
-    //正则表达式的运用
-    /**
-     * 551. Student Attendance Record I
-     * @param s
-     * @return
-     */
-    public boolean checkRecord(String s) {
-        if(s.matches("[a-z|A-Z]*A[a-z|A-Z]*A[a-z|A-Z]*") || s.matches("[a-z|A-Z]*L{3,}[a-z|A-Z]*")){
-            return false;
-        }
-        return true;
-        //!s.matches(".*LLL.*|.*A.*A.*");
-    }
-
-
-    //while循环的使用，对半顺序反转的使用
-    /**
-     * 345. Reverse Vowels of a String
-     * 反转字符串中元音字母的顺序
-     * @param s
-     * @return
-     */
-    public String reverseVowels(String s) {
-        String vowels = "aeiouAEIOU";
-        char[] arr = s.toCharArray();
-        int start = 0;
-        int end = arr.length - 1;
-        while(start < end){
-            while(start < end && !vowels.contains(arr[start] + "")){
-                start ++;
-            }
-
-            while(start < end && !vowels.contains(arr[end] + "")){
-                end--;
-            }
-
-            char a = arr[start];
-            arr[start] = arr[end];
-            arr[end] = a;
-            start ++;
-            end --;
-        }
-        return new String(arr);
-    }
 
 
     //写法无误， 太过耗时
@@ -1142,6 +1145,27 @@ public class LeetCode {
     }
 
 
+
+
+    //正则表达式的运用
+    /**
+     * 551. Student Attendance Record I
+     * @param s
+     * @return
+     */
+    public boolean checkRecord(String s) {
+        if(s.matches("[a-z|A-Z]*A[a-z|A-Z]*A[a-z|A-Z]*") || s.matches("[a-z|A-Z]*L{3,}[a-z|A-Z]*")){
+            return false;
+        }
+        return true;
+        //!s.matches(".*LLL.*|.*A.*A.*");
+    }
+
+
+
+
+
+
     //二叉树相关知识， 递归思想。
     /**
      * 617. Merge Two Binary Trees
@@ -1165,16 +1189,27 @@ public class LeetCode {
     }
 
 
-    //待做
+
+
     /**
-     * 28. Implement strStr()
-     * 实现类java String。indexOf方法
-     * @param haystack
-     * @param needle
+     * 给定一串字符串表示 U D L R 运动， 判断经过运动后是否还在原点
+     * 657. Judge Route Circle
+     * @param moves
      * @return
      */
-    public int strStr(String haystack, String needle) {
-        return haystack.indexOf(needle);
+    public boolean judgeCircle(String moves) {
+        int x = 0;
+        int y = 0;
+        for (char move : moves.toCharArray()){
+            switch (move){
+                case 'U' : x++; break;
+                case 'D' : x--; break;
+                case 'L' : y--; break;
+                case 'R' : y++; break;
+            }
+        }
+
+        return x == 0 && y == 0;
     }
 
 
