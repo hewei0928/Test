@@ -515,71 +515,6 @@ public class LeetCode {
         return new String(ca);
     }
 
-    /**
-     * Island Perimeter
-     * ????????????????
-     * ????1?????????0???????
-     * ???????????/????????????????
-     * ??????????????????????????????????????????????????????????
-     * ???????????????????????????????????????
-     * ?????????????1?????????
-     * ?????????????????????100??
-     * ?????????????
-     * @param grid
-     * @return
-     */
-    public static int islandPerimeter(int[][] grid) {
-        int perimeter = 0;
-        for(int i = 0; i < grid.length; i++){
-            for(int j = 0; j < grid[i].length; j++){
-                if(grid[i][j] == 1){
-                    perimeter += 4;
-                    if(i - 1 >= 0 && grid[i - 1][j] == 1){
-                        perimeter --;
-                    }
-                    if(i + 1 < grid.length && grid[i + 1][j] == 1){
-                        perimeter --;
-                    }
-                    if(j - 1 >= 0 && grid[i][j - 1] == 1){
-                        perimeter--;
-                    }
-                    if(j + 1 < grid[i].length && grid[i][j + 1] == 1){
-                        perimeter--;
-                    }
-                }
-            }
-        }
-        return perimeter;
-    }
-
-    /**
-     * Island Perimeter
-     * ????????????????
-     * ????1?????????0???????
-     * ???????????/????????????????
-     * ??????????????????????????????????????????????????????????
-     * ???????????????????????????????????????
-     * ?????????????1?????????
-     * ?????????????????????100??
-     * ?????????????
-     * @param grid
-     * @return
-     */
-    public static int islandPerimeter1(int[][] grid) {
-        if (grid == null || grid.length == 0 || grid[0].length == 0) return 0;
-        int result = 0;
-        for (int i = 0; i < grid.length; i++) {
-            for (int j = 0; j < grid[0].length; j++) {
-                if (grid[i][j] == 1) {
-                    result += 4;
-                    if (i > 0 && grid[i-1][j] == 1) result -= 2;
-                    if (j > 0 && grid[i][j-1] == 1) result -= 2;
-                }
-            }
-        }
-        return result;
-    }
-
 
     //???????
     /**
@@ -1146,6 +1081,70 @@ public class LeetCode {
 
 
 
+    /**
+     * 463 Island Perimeter
+     * 你得到一张二维整数网格的地图，
+     * 其中1代表土地，0代表水。
+     * 网格完全被水包围，而且正好有一个岛（即，一个或多个相连的陆地单元）。
+     * 这个岛没有“湖泊”（里面的水与岛上的水没有联系）。
+     * 一个单元格是边长为1的正方形。网格为矩形，宽度和高度不超过100。
+     * 确定该岛的周长。
+     * @param grid
+     * @return
+     */
+    public static int islandPerimeter(int[][] grid) {
+        int perimeter = 0;
+        for(int i = 0; i < grid.length; i++){
+            for(int j = 0; j < grid[i].length; j++){
+                if(grid[i][j] == 1){
+                    perimeter += 4;
+                    if(i - 1 >= 0 && grid[i - 1][j] == 1){
+                        perimeter --;
+                    }
+                    if(i + 1 < grid.length && grid[i + 1][j] == 1){
+                        perimeter --;
+                    }
+                    if(j - 1 >= 0 && grid[i][j - 1] == 1){
+                        perimeter--;
+                    }
+                    if(j + 1 < grid[i].length && grid[i][j + 1] == 1){
+                        perimeter--;
+                    }
+                }
+            }
+        }
+        return perimeter;
+    }
+
+    /**
+     * 463 Island Perimeter
+     * 你得到一张二维整数网格的地图，
+     * 其中1代表土地，0代表水。
+     * 网格完全被水包围，而且正好有一个岛（即，一个或多个相连的陆地单元）。
+     * 这个岛没有“湖泊”（里面的水与岛上的水没有联系）。
+     * 一个单元格是边长为1的正方形。网格为矩形，宽度和高度不超过100。
+     * 确定该岛的周长。
+     * @param grid
+     * @return
+     */
+    public static int islandPerimeter1(int[][] grid) {
+        if (grid == null || grid.length == 0 || grid[0].length == 0) return 0;
+        int result = 0;
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
+                if (grid[i][j] == 1) {
+                    result += 4;
+                    if (i > 0 && grid[i-1][j] == 1) result -= 2;
+                    if (j > 0 && grid[i][j-1] == 1) result -= 2;
+                }
+            }
+        }
+        return result;
+    }
+
+
+
+
 
     //正则表达式的运用
     /**
@@ -1213,6 +1212,7 @@ public class LeetCode {
     }
 
 
+    //解法出错, 无法完成
     /**
      * 575. Distribute Candies
      * 偶数数组，不同数字表示不同种类的糖果。 将这些糖果数量分配给兄妹。
@@ -1248,6 +1248,25 @@ public class LeetCode {
         return singular/2 + even;
     }
 
+
+
+    //理解思想及hashset的使用
+    /**
+     * 575. Distribute Candies
+     * 偶数数组，不同数字表示不同种类的糖果。 将这些糖果数量分配给兄妹。
+     * 返回妹妹可以获得的最多种类的糖果。
+     * @param candies
+     * @return
+     */
+    public static int distributeCandies1(int[] candies) {
+        HashSet hashSet = new HashSet();
+        for(Integer integer : candies) {
+            hashSet.add(integer);
+            if (hashSet.size() >= candies.length) break;
+        }
+        //return hashSet.size() > candies.length/2 ? candies.length/2 : hashSet.size()/2;
+        return Math.min(candies.length/2, hashSet.size());
+    }
 
 
 
