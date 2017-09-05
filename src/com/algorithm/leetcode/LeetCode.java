@@ -586,6 +586,34 @@ public class LeetCode {
     }
 
 
+    //完成，set的使用
+    /**
+     * 349. Intersection of Two Arrays
+     * 给定两个数组，编写一个函数来计算它们的交集。
+     * @param nums1
+     * @param nums2
+     * @return
+     */
+    public int[] intersection(int[] nums1, int[] nums2) {
+        Set<Integer> hashSet = new HashSet();
+        Set<Integer> integers = new HashSet<>();
+        for(Integer integer : nums1){
+            hashSet.add(integer);
+        }
+
+        for(Integer integer : nums2){
+            if (hashSet.contains(integer)){
+               integers.add(integer);
+            }
+        }
+        int[] result = new int[integers.size()];
+        int i = 0;
+        for(Integer integer : integers){
+            result[i++] = integer;
+        }
+        return result;
+    }
+
 
 
     //正则表达式的运用
@@ -801,6 +829,96 @@ public class LeetCode {
     }
 
 
+    //TODO 超时
+    /**
+     * 454. 4Sum II
+     * 有几组(i, j, k, l) 使得A[i] + B[j] + C[k] + D[l] = 0；
+     * @param A 输入数组
+     * @param B 输入数组
+     * @param C 输入数组
+     * @param D 输入数组
+     * @return
+     */
+    public int fourSumCount(int[] A, int[] B, int[] C, int[] D) {
+
+        int result = 0;
+
+        Map<Integer, Integer> mapAB = new HashMap();
+        Map<Integer, Integer> mapCD = new HashMap();
+
+        for(int i = 0; i < A.length; i++){
+            for(int j = 0; j < B.length; j++){
+                int k = A[i] + B[j];
+                if(mapAB.containsKey(k)){
+                    mapAB.put(k, mapAB.get(k) + 1);
+                } else {
+                    mapAB.put(k, 1);
+                }
+            }
+        }
+
+
+
+        for(int i = 0; i < C.length; i++){
+            for(int j = 0; j < D.length; j++){
+                int k = C[i] + D[j];
+                if(mapCD.containsKey(k)){
+                    mapCD.put(k, mapCD.get(k) + 1);
+                } else {
+                    mapCD.put(k, 1);
+                }
+            }
+        }
+
+
+        for(Integer integerAB : mapAB.keySet()){
+            for(Integer integerCD : mapCD.keySet()){
+                if(integerAB + integerCD == 0){
+                    result += mapAB.get(integerAB) * mapCD.get(integerCD);
+                }
+            }
+        }
+
+        return result;
+
+    }
+
+
+
+    //TODO 待看, 重做一遍
+    /**
+     * 454. 4Sum II
+     * 有几组(i, j, k, l) 使得A[i] + B[j] + C[k] + D[l] = 0；
+     * @param A 输入数组
+     * @param B 输入数组
+     * @param C 输入数组
+     * @param D 输入数组
+     * @return
+     */
+    public int fourSumCount1(int[] A, int[] B, int[] C, int[] D) {
+        int result = 0;
+
+        Map<Integer, Integer> mapAB = new HashMap();
+
+        for(int i = 0; i < A.length; i++){
+            for(int j = 0; j < B.length; j++){
+                int k = A[i] + B[j];
+                mapAB.put(k, mapAB.getOrDefault(k, 0) + 1);
+            }
+        }
+
+
+        for(int i = 0; i < C.length; i++){
+            for(int j = 0; j < D.length; j++){
+                int k = C[i] + D[j];
+                result += mapAB.getOrDefault( -k, 0);
+            }
+        }
+
+        return result;
+    }
+
+
 
 
     //写法无误， 太过耗时
@@ -958,14 +1076,22 @@ public class LeetCode {
      * @return
      */
     public static int findComplement(int num) {
-        int result = 0;
-//        Long bit = Long.highestOneBit(num);
+//        int result = 0;
+//        Long bit = Long.highestOneBit(num);//返回的值为最高位为1，其余位为0的十进制表示
 //        int total = 1;
 //        for(int i = 1; i < bit; i++){
 //            total += Math.pow(2, i);
 //        }
 //        result = total ^ num;
-        return result;
+//        return result;
+
+        int i = 0;
+        int j = 0;
+        while (i < num){// 该循环得出二进制表示位数与num相同，但各位都为1的数
+            i += Math.pow(2, j);
+            j++;
+        }
+        return i ^ num;
     }
 
     /**
@@ -1021,6 +1147,29 @@ public class LeetCode {
         for (int n : nums)
             max = Math.max(max, maxHere = n == 0 ? 0 : maxHere + 1);
         return max;
+    }
+
+
+    //题目要求不清，无法解答
+    /**
+     * 496. Next Greater Element I
+     * @param nums1
+     * @param nums2
+     * @return
+     */
+    public int[] nextGreaterElement(int[] nums1, int[] nums2) {
+        return null;
+    }
+
+
+    /**
+     * 500. Keyboard Row
+     * 给定一个单词列表，返回只能用一行字母的美国键盘输入的单词
+     * @param words 要判断的字符串数组
+     * @return 可以用一行键盘打出的字符串数组
+     */
+    public String[] findWords(String[] words) {
+
     }
 
 

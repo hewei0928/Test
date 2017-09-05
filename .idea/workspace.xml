@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b323eba-0475-4192-b8e3-34031d72711c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java" afterPath="$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +18,8 @@
       <file leaf-file-name="LeetCode.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="290">
+              <caret line="1187" column="22" lean-forward="false" selection-start-line="1187" selection-start-column="22" selection-end-line="1187" selection-end-column="22" />
               <folding>
                 <element signature="docComment;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#twoSums#0;class#LeetCode#0" expanded="false" />
@@ -66,6 +67,7 @@
                 <element signature="method#reverseString#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#reverseVowels#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#reverseVowels#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#intersection#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#canConstruct#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#canConstruct#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#canConstruct1#0;class#LeetCode#0" expanded="false" />
@@ -83,6 +85,8 @@
                 <element signature="method#findDuplicates#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#findDuplicates2#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#findDuplicates2#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#fourSumCount1#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#fourSumCount1#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#repeatedSubstringPattern#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#repeatedSubstringPattern#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#repeatedSubstringPattern1#0;class#LeetCode#0" expanded="false" />
@@ -95,8 +99,6 @@
                 <element signature="docComment;method#islandPerimeter1#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#islandPerimeter1#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#findComplement#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#findComplement#0;class#LeetCode#0" expanded="false" />
-                <element signature="e#23050#23095#0" expanded="false" />
                 <element signature="docComment;method#findComplement1#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#findComplement1#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#findMaxConsecutiveOnes#0;class#LeetCode#0" expanded="false" />
@@ -104,7 +106,6 @@
                 <element signature="docComment;method#findMaxConsecutiveOnes1#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#findMaxConsecutiveOnes1#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#convertToBase7#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#convertToBase7#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#detectCapitalUse#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;field#urls#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#encode#0;class#LeetCode#0" expanded="false" />
@@ -138,7 +139,6 @@
                 <element signature="method#mergeTrees#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#judgeCircle#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#judgeCircle#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#main#0;class#LeetCode#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -162,6 +162,7 @@
       <find>reverseVowels</find>
       <find>reverseStr</find>
       <find>distributeCandies</find>
+      <find>nextGreaterElement</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -260,8 +261,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -952,12 +953,13 @@
       <workItem from="1504496031805" duration="1329000" />
       <workItem from="1504584302792" duration="5326000" />
       <workItem from="1504590439116" duration="61000" />
-      <workItem from="1504596129211" duration="8409000" />
+      <workItem from="1504596129211" duration="14554000" />
+      <workItem from="1504615516471" duration="2310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135855000" />
+    <option name="totallyTimeSpent" value="144310000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -969,7 +971,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -990,10 +992,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2863777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2863777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15506808" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15733737" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1223,8 +1225,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="290">
+          <caret line="1187" column="22" lean-forward="false" selection-start-line="1187" selection-start-column="22" selection-end-line="1187" selection-end-column="22" />
           <folding>
             <element signature="docComment;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#twoSums#0;class#LeetCode#0" expanded="false" />
@@ -1272,6 +1274,7 @@
             <element signature="method#reverseString#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#reverseVowels#0;class#LeetCode#0" expanded="false" />
             <element signature="method#reverseVowels#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#intersection#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#canConstruct#0;class#LeetCode#0" expanded="false" />
             <element signature="method#canConstruct#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#canConstruct1#0;class#LeetCode#0" expanded="false" />
@@ -1289,6 +1292,8 @@
             <element signature="method#findDuplicates#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#findDuplicates2#0;class#LeetCode#0" expanded="false" />
             <element signature="method#findDuplicates2#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#fourSumCount1#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#fourSumCount1#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#repeatedSubstringPattern#0;class#LeetCode#0" expanded="false" />
             <element signature="method#repeatedSubstringPattern#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#repeatedSubstringPattern1#0;class#LeetCode#0" expanded="false" />
@@ -1301,8 +1306,6 @@
             <element signature="docComment;method#islandPerimeter1#0;class#LeetCode#0" expanded="false" />
             <element signature="method#islandPerimeter1#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#findComplement#0;class#LeetCode#0" expanded="false" />
-            <element signature="method#findComplement#0;class#LeetCode#0" expanded="false" />
-            <element signature="e#23050#23095#0" expanded="false" />
             <element signature="docComment;method#findComplement1#0;class#LeetCode#0" expanded="false" />
             <element signature="method#findComplement1#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#findMaxConsecutiveOnes#0;class#LeetCode#0" expanded="false" />
@@ -1310,7 +1313,6 @@
             <element signature="docComment;method#findMaxConsecutiveOnes1#0;class#LeetCode#0" expanded="false" />
             <element signature="method#findMaxConsecutiveOnes1#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#convertToBase7#0;class#LeetCode#0" expanded="false" />
-            <element signature="method#convertToBase7#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#detectCapitalUse#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;field#urls#0;class#LeetCode#0" expanded="false" />
             <element signature="method#encode#0;class#LeetCode#0" expanded="false" />
@@ -1344,7 +1346,6 @@
             <element signature="method#mergeTrees#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#judgeCircle#0;class#LeetCode#0" expanded="false" />
             <element signature="method#judgeCircle#0;class#LeetCode#0" expanded="false" />
-            <element signature="method#main#0;class#LeetCode#0" expanded="false" />
           </folding>
         </state>
       </provider>
