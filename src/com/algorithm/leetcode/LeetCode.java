@@ -9,7 +9,10 @@ import java.util.*;
 public class LeetCode {
 
     /**
-     * 1. ???????
+     * 1. two sum
+     * Given nums = [2, 7, 11, 15], target = 9,
+     * Because nums[0] + nums[1] = 2 + 7 = 9,
+     * return [0, 1].
      * @param nums
      * @param target
      * @return
@@ -28,8 +31,10 @@ public class LeetCode {
         return result;
     }
 
+
+    //HashMap的使用 及其get方法的时间复杂度
     /**
-     * 1. ???????
+     * 1. two sum
      * @param nums
      * @param target
      * @return
@@ -54,7 +59,7 @@ public class LeetCode {
     //待做
     /**
      * 28. Implement strStr()
-     * 实现类java String。indexOf方法
+     * 实现类java String.indexOf方法
      * @param haystack
      * @param needle
      * @return
@@ -86,28 +91,7 @@ public class LeetCode {
         return result;
     }
 
-    /**
-     * fizz buzz????
-     * @param n
-     * @return
-     */
-    public static List<String> fizzBuzz(int n) {
-        List<String> result = new ArrayList<>();
-        for(int i = 1; i <= n; i++){
-            String s = "";
-            if(i % 3 == 0){
-                s += "Fizz";
-            }
-            if(i % 5 == 0){
-                s += "Buzz";
-            }
-            if(s.equals("")){
-                s = String.valueOf(i);
-            }
-            result.add(s);
-        }
-        return  result;
-    }
+
 
     /**
      * ????????
@@ -124,36 +108,6 @@ public class LeetCode {
         return new String(chars);
     }
 
-    /**
-     * Hamming Distance ????????
-     * @param x
-     * @param y
-     * @return
-     */
-    public static int getInstance(int x, int y){
-        int result = 0;
-        int i = x & y;
-        int j = x | y;
-        int k = j - i;
-        while(k != 0){
-            int l = k % 2;
-            if(l != 0){
-                result += 1;
-            }
-            k /= 2;
-        }
-        return  result;
-    }
-
-    /**
-     * ????????
-     * @param x
-     * @param y
-     * @return
-     */
-    public static int getInstance1(int x, int y){
-        return Integer.bitCount(x ^ y);
-    }
 
 
     //?????
@@ -658,23 +612,6 @@ public class LeetCode {
     }
 
 
-    /**
-     * Find All Duplicates in an Array
-     * ???????????????1??a[i]??N??N =???????,???????????????????
-     * ??????????????????????????
-     * @param nums
-     * @return
-     */
-    public static List<Integer> findDuplicates(int[] nums) {
-        List<Integer> list = new ArrayList<>();
-        Arrays.sort(nums);
-        for(int i = 0; i < nums.length - 1; i++){
-            if(nums[i] == nums[i + 1]){
-                list.add(nums[i]);
-            }
-        }
-        return list;
-    }
 
     /**
      * Single Number
@@ -1036,6 +973,152 @@ public class LeetCode {
     }
 
 
+    /**
+     * 389. Find the Difference
+     * 给定两个只包含小写字母的字符串S和T。
+     * 字符串T是通过随机洗牌字符串s生成的，然后在随机位置添加一个字母。
+     * 查找T中添加的字母。
+     * @param s
+     * @param t
+     * @return
+     */
+    public char findTheDifference(String s, String t) {
+        Map<Character, Integer> map = new HashMap<>();
+        for(char c : s.toCharArray()){//将s中出现的各字符及其次数存入map中
+            if(map.containsKey(c)){
+                map.put(c, map.get(c)+1);
+            } else {
+                map.put(c, 1);
+            }
+        }
+
+        for (Character c : t.toCharArray()){//遍历t, 找出其中比s多出的char
+            if(map.containsKey(c)){
+                map.put(c, map.get(c) - 1);
+                if(map.get(c) < 0){
+                    return c;
+                }
+            } else {
+                return c;
+            }
+        }
+        return 'a';
+    }
+
+
+    //位运算的作用,牢记 x ^ x = 0, x ^ 0 = x
+    /**
+     * 389. Find the Difference
+     * 给定两个只包含小写字母的字符串S和T。
+     * 字符串T是通过随机洗牌字符串s生成的，然后在随机位置添加一个字母。
+     * 查找T中添加的字母。
+     * @param s
+     * @param t
+     * @return
+     */
+    public char findTheDifference1(String s, String t) {
+        char result = 0;
+        String st = s + t;
+        for(char c : st.toCharArray()){
+            result ^= c;
+        }
+        return result;
+    }
+
+
+
+    /**
+     * 412 fizz buzz
+     * @param n
+     * @return
+     */
+    public static List<String> fizzBuzz(int n) {
+        List<String> result = new ArrayList<>();
+        for(int i = 1; i <= n; i++){
+            String s = "";
+            if(i % 3 == 0){
+                s += "Fizz";
+            }
+            if(i % 5 == 0){
+                s += "Buzz";
+            }
+            if(s.equals("")){
+                s = String.valueOf(i);
+            }
+            result.add(s);
+        }
+        return  result;
+    }
+
+
+    //利用循环解决, 厉害 过段时间后照样写出此方法
+    /**
+     * 412 fizz buzz
+     * @param n
+     * @return
+     */
+    public List<String> fizzBuzz1(int n) {
+        List<String> ret = new ArrayList<>(n);
+        for(int i=1,fizz=0,buzz=0;i<=n ;i++){
+            fizz++;
+            buzz++;
+            if(fizz==3 && buzz==5){
+                ret.add("FizzBuzz");
+                fizz=0;
+                buzz=0;
+            }else if(fizz==3){
+                ret.add("Fizz");
+                fizz=0;
+            }else if(buzz==5){
+                ret.add("Buzz");
+                buzz=0;
+            }else{
+                ret.add(String.valueOf(i));
+            }
+        }
+        return ret;
+    }
+
+
+
+    /**
+     * 442 Find All Duplicates in an Array
+     * 找出nums[] 中出现两次的数字
+     * @param nums
+     * @return
+     */
+    public static List<Integer> findDuplicates(int[] nums) {
+        List<Integer> list = new ArrayList<>();
+        Arrays.sort(nums);
+        for(int i = 0; i < nums.length - 1; i++){
+            if(nums[i] == nums[i + 1]){
+                list.add(nums[i]);
+            }
+        }
+        return list;
+    }
+
+
+    //尚未理解 待看
+    /**
+     * 442 Find All Duplicates in an Array
+     * 找出 nums[n] 中出现两次的数字, 1 =< nums[i] <= n, 且某个数字最多出现两次
+     * @param nums
+     * @return
+     */
+    public static List<Integer> findDuplicates2(int[] nums) {
+        List<Integer> res = new ArrayList<>();
+        for (int i = 0; i < nums.length; ++i) {
+            int index = Math.abs(nums[i])-1;
+            if (nums[index] < 0)
+                res.add(Math.abs(index+1));
+            nums[index] = -nums[index];
+        }
+        return res;
+    }
+
+
+
 
     //写法无误， 太过耗时
     /**
@@ -1082,6 +1165,44 @@ public class LeetCode {
 
 
     /**
+     * 461 Hamming Distance 汉明距离
+     * 转换为二进制码后不同位数
+     * @param x
+     * @param y
+     * @return
+     */
+    public static int getInstance(int x, int y){
+        int result = 0;
+        int i = x & y;
+        int j = x | y;
+        int k = j - i;
+        while(k != 0){
+            int l = k % 2;
+            if(l != 0){
+                result += 1;
+            }
+            k /= 2;
+        }
+        return  result;
+    }
+
+    //Integer.bitCount 计算二进制表示中1的个数
+    /**
+     * 汉明距离
+     * @param x
+     * @param y
+     * @return
+     */
+    public static int getInstance1(int x, int y){
+        return Integer.bitCount(x ^ y);
+    }
+
+
+
+
+
+
+    /**
      * 463 Island Perimeter
      * 你得到一张二维整数网格的地图，
      * 其中1代表土地，0代表水。
@@ -1116,6 +1237,8 @@ public class LeetCode {
         return perimeter;
     }
 
+
+
     /**
      * 463 Island Perimeter
      * 你得到一张二维整数网格的地图，
@@ -1145,7 +1268,6 @@ public class LeetCode {
 
 
 
-
     //正则表达式的运用
     /**
      * 551. Student Attendance Record I
@@ -1161,55 +1283,6 @@ public class LeetCode {
     }
 
 
-
-
-
-
-    //二叉树相关知识， 递归思想。
-    /**
-     * 617. Merge Two Binary Trees
-     * 二叉树合并
-     * @param t1
-     * @param t2
-     * @return
-     */
-    public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
-        if(t1 == null && t2 == null){
-            return null;
-        } else if(t1 == null){
-            return t2;
-        } else if(t2 == null){
-            return t1;
-        }
-        t1.val += t2.val;
-        t1.left = mergeTrees(t1.left, t2.left);
-        t1.right = mergeTrees(t1.right, t2.right);
-        return t1;
-    }
-
-
-
-
-    /**
-     * 给定一串字符串表示 U D L R 运动， 判断经过运动后是否还在原点
-     * 657. Judge Route Circle
-     * @param moves
-     * @return
-     */
-    public boolean judgeCircle(String moves) {
-        int x = 0;
-        int y = 0;
-        for (char move : moves.toCharArray()){
-            switch (move){
-                case 'U' : x++; break;
-                case 'D' : x--; break;
-                case 'L' : y--; break;
-                case 'R' : y++; break;
-            }
-        }
-
-        return x == 0 && y == 0;
-    }
 
 
     //解法出错, 无法完成
@@ -1268,6 +1341,56 @@ public class LeetCode {
         return Math.min(candies.length/2, hashSet.size());
     }
 
+
+
+
+
+
+    //二叉树相关知识， 递归思想。
+    /**
+     * 617. Merge Two Binary Trees
+     * 二叉树合并
+     * @param t1
+     * @param t2
+     * @return
+     */
+    public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
+        if(t1 == null && t2 == null){
+            return null;
+        } else if(t1 == null){
+            return t2;
+        } else if(t2 == null){
+            return t1;
+        }
+        t1.val += t2.val;
+        t1.left = mergeTrees(t1.left, t2.left);
+        t1.right = mergeTrees(t1.right, t2.right);
+        return t1;
+    }
+
+
+
+
+    /**
+     * 给定一串字符串表示 U D L R 运动， 判断经过运动后是否还在原点
+     * 657. Judge Route Circle
+     * @param moves
+     * @return
+     */
+    public boolean judgeCircle(String moves) {
+        int x = 0;
+        int y = 0;
+        for (char move : moves.toCharArray()){
+            switch (move){
+                case 'U' : x++; break;
+                case 'D' : x--; break;
+                case 'L' : y--; break;
+                case 'R' : y++; break;
+            }
+        }
+
+        return x == 0 && y == 0;
+    }
 
 
 

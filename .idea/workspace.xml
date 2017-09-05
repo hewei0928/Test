@@ -18,25 +18,15 @@
       <file leaf-file-name="LeetCode.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-205">
-              <caret line="1050" column="19" lean-forward="false" selection-start-line="1050" selection-start-column="19" selection-end-line="1050" selection-end-column="19" />
+            <state relative-caret-position="354">
+              <caret line="1280" column="20" lean-forward="true" selection-start-line="1280" selection-start-column="20" selection-end-line="1280" selection-end-column="20" />
               <folding>
                 <element signature="docComment;class#LeetCode#0" expanded="false" />
-                <element signature="method#twoSums#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#twoSums2#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#twoSums2#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#reverse#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#reverse#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#fizzBuzz#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#fizzBuzz#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#reverseString#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#reverseString#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#getInstance#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#getInstance#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#getInstance1#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#findComplement#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#findComplement#0;class#LeetCode#0" expanded="false" />
-                <element signature="e#3562#3607#0" expanded="false" />
+                <element signature="e#2598#2643#0" expanded="false" />
                 <element signature="docComment;method#findComplement1#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#findComplement1#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;field#urls#0;class#LeetCode#0" expanded="false" />
@@ -77,8 +67,6 @@
                 <element signature="method#findCircleNum1#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#numIslands#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#numIslands#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#findDuplicates#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#findDuplicates#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#singleNumber#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#singleNumber#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#singleNumber1#0;class#LeetCode#0" expanded="false" />
@@ -105,12 +93,14 @@
                 <element signature="method#addDigits#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#canConstruct#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#canConstruct1#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#findTheDifference#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#islandPerimeter#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#islandPerimeter#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#islandPerimeter1#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#islandPerimeter1#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#checkRecord#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#distributeCandies#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#distributeCandies1#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#mergeTrees#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#judgeCircle#0;class#LeetCode#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -217,8 +207,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1378" />
-    <option name="height" value="780" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -238,7 +228,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -308,7 +298,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -901,11 +891,15 @@
       <workItem from="1502243871114" duration="45000" />
       <workItem from="1504255197782" duration="6557000" />
       <workItem from="1504492025367" duration="2822000" />
+      <workItem from="1504496031805" duration="1329000" />
+      <workItem from="1504584302792" duration="5326000" />
+      <workItem from="1504590439116" duration="61000" />
+      <workItem from="1504596129211" duration="1081000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120730000" />
+    <option name="totallyTimeSpent" value="128527000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -917,7 +911,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="780" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -941,7 +935,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2863777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.119119875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12556732" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1171,25 +1165,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-205">
-          <caret line="1050" column="19" lean-forward="false" selection-start-line="1050" selection-start-column="19" selection-end-line="1050" selection-end-column="19" />
+        <state relative-caret-position="354">
+          <caret line="1280" column="20" lean-forward="true" selection-start-line="1280" selection-start-column="20" selection-end-line="1280" selection-end-column="20" />
           <folding>
             <element signature="docComment;class#LeetCode#0" expanded="false" />
-            <element signature="method#twoSums#0;class#LeetCode#0" expanded="false" />
-            <element signature="docComment;method#twoSums2#0;class#LeetCode#0" expanded="false" />
-            <element signature="method#twoSums2#0;class#LeetCode#0" expanded="false" />
-            <element signature="docComment;method#reverse#0;class#LeetCode#0" expanded="false" />
-            <element signature="method#reverse#0;class#LeetCode#0" expanded="false" />
-            <element signature="docComment;method#fizzBuzz#0;class#LeetCode#0" expanded="false" />
-            <element signature="method#fizzBuzz#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#reverseString#0;class#LeetCode#0" expanded="false" />
             <element signature="method#reverseString#0;class#LeetCode#0" expanded="false" />
-            <element signature="docComment;method#getInstance#0;class#LeetCode#0" expanded="false" />
-            <element signature="method#getInstance#0;class#LeetCode#0" expanded="false" />
-            <element signature="docComment;method#getInstance1#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#findComplement#0;class#LeetCode#0" expanded="false" />
             <element signature="method#findComplement#0;class#LeetCode#0" expanded="false" />
-            <element signature="e#3562#3607#0" expanded="false" />
+            <element signature="e#2598#2643#0" expanded="false" />
             <element signature="docComment;method#findComplement1#0;class#LeetCode#0" expanded="false" />
             <element signature="method#findComplement1#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;field#urls#0;class#LeetCode#0" expanded="false" />
@@ -1230,8 +1214,6 @@
             <element signature="method#findCircleNum1#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#numIslands#0;class#LeetCode#0" expanded="false" />
             <element signature="method#numIslands#0;class#LeetCode#0" expanded="false" />
-            <element signature="docComment;method#findDuplicates#0;class#LeetCode#0" expanded="false" />
-            <element signature="method#findDuplicates#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#singleNumber#0;class#LeetCode#0" expanded="false" />
             <element signature="method#singleNumber#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#singleNumber1#0;class#LeetCode#0" expanded="false" />
@@ -1258,12 +1240,14 @@
             <element signature="method#addDigits#0;class#LeetCode#0" expanded="false" />
             <element signature="method#canConstruct#0;class#LeetCode#0" expanded="false" />
             <element signature="method#canConstruct1#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#findTheDifference#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#islandPerimeter#0;class#LeetCode#0" expanded="false" />
             <element signature="method#islandPerimeter#0;class#LeetCode#0" expanded="false" />
-            <element signature="docComment;method#islandPerimeter1#0;class#LeetCode#0" expanded="false" />
             <element signature="method#islandPerimeter1#0;class#LeetCode#0" expanded="false" />
-            <element signature="method#checkRecord#0;class#LeetCode#0" expanded="false" />
             <element signature="method#distributeCandies#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#distributeCandies1#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#mergeTrees#0;class#LeetCode#0" expanded="false" />
+            <element signature="method#judgeCircle#0;class#LeetCode#0" expanded="false" />
           </folding>
         </state>
       </provider>
