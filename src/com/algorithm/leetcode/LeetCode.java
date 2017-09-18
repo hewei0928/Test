@@ -94,7 +94,78 @@ public class LeetCode {
     }
 
 
-    //union-find 方法变形
+    /**
+     * 128. Longest Consecutive Sequence
+     * 给定一个未排序的整数数组，找到最长连续元素序列的长度。
+     * 例如，
+     * 给予[100,4,2200,1,3,2]
+     * 连续元数最长的序列是[1,2,3,4]。 返回长度：4。
+     * 您的算法应该以O（n）的复杂度运行。
+     * @param nums
+     * @return
+     */
+    public int longestConsecutive(int[] nums) {
+        Arrays.sort(nums);
+        if(nums.length == 0){
+            return 0;
+        }
+        int result = 1;
+        int count = 1;
+        for(int i = 0; i < nums.length - 1; i++){
+            if (nums[i] == nums[i + 1]){//重复数字出现情况
+                continue;
+            }
+            if (nums[i] + 1 == nums[i + 1]){
+                count++;
+                result = count > result ? count : result;
+            } else {
+                count =1;
+            }
+        }
+        return result;
+    }
+
+
+    //细看， 重做一遍
+    /**
+     * 128. Longest Consecutive Sequence
+     * 给定一个未排序的整数数组，找到最长连续元素序列的长度。
+     * 例如，
+     * 给予[100,4,2200,1,3,2]
+     * 连续元数最长的序列是[1,2,3,4]。 返回长度：4。
+     * 您的算法应该以O（n）的复杂度运行。
+     * @param num
+     * @return
+     */
+    public int longestConsecutive1(int[] num) {
+        int res = 0;
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        for (int n : num) {
+            if (!map.containsKey(n)) {
+                int left = (map.containsKey(n - 1)) ? map.get(n - 1) : 0;//左边序列的长度
+                int right = (map.containsKey(n + 1)) ? map.get(n + 1) : 0;//右边序列的长度
+                // sum: length of the sequence n is in
+                int sum = left + right + 1;
+                map.put(n, sum);//key表示num中的值， sum表示该值连续序列长度
+
+                // keep track of the max length
+                res = Math.max(res, sum);
+
+                //将连续序列另一个边界的值也对应修改
+                map.put(n - left, sum);
+                map.put(n + right, sum);
+            }
+            else {
+                // duplicates
+                continue;
+            }
+        }
+        return res;
+    }
+
+
+
+    //union-find 方法变形 已解决，有空复习
     /**
      * 130. Surrounded Regions
      * 给定一个包含'X'和'O'（字母O）的2D板，捕获被'X'包围的所有区域。
@@ -111,10 +182,48 @@ public class LeetCode {
          X O X X
      * @param board
      */
-    public void solve(char[][] board) {
+    public static void solve(char[][] board) {
 
-        char x = 'X';
-        char o = 'O';
+        int row = board.length;
+        if(row > 0 ){
+            int col = board[0].length;
+
+            WeightedQuickUnionUF quickFindUF = new WeightedQuickUnionUF(row * col);
+
+            for(int i = 0; i < row; i++){
+                for(int j = 0; j < col; j++){
+                    if((i == 0 || i == row - 1 || j == 0 || j == col - 1) && board[i][j] == 'O'){//将二位数组边界为'O'的均设为与n*m处联通
+                        quickFindUF.union( i*(col -1) + j, row * col -1);
+                    } else if (board[i][j] == 'O'){//除了边界处的'O'，进行联通判断
+                        if(board[i-1][j] == 'O'){//上方处也为'O'
+                            System.out.println(true);
+                            quickFindUF.union(i*(col -1) + j, (i-1)*(col -1) + j);
+                        }
+                        if(board[i+1][j] == 'O'){//下方处也为'O'
+                            System.out.println(true);
+                            quickFindUF.union(i*(col -1) + j, (i+1)*(col -1) + j);
+                        }
+                        if(board[i][j-1] == 'O'){//左侧处也为'O'
+                            System.out.println(true);
+                            quickFindUF.union(i*(col -1) + j, i*(col -1) + j - 1);
+                        }
+                        if(board[i][j+1] == 'O'){//右侧处也为'O'
+                            System.out.println(true);
+                            quickFindUF.union(i*(col -1) + j, i*(col -1) + j + 1);
+                        }
+                    }
+                }
+            }
+
+            //判断各位置与n*m处是否联通，不连通则设为'X'
+            for(int i = 0; i < row; i++){
+                for(int j = 0; j < col; j++) {
+                    if(!quickFindUF.connected(i * (col - 1) + j, row * col - 1)){
+                        board[i][j] = 'X';
+                    }
+                }
+            }
+        }
 
     }
 
@@ -370,8 +479,44 @@ public class LeetCode {
     }
 
 
+    //厉害的解法， 待细看，数组下标应用， 日后重做一遍
+    /**
+     * 238. Product of Array Except Self
+     * 给定n个整数的数组，其中n> 1，nums返回数组输出，使得output [i]等于nums [i]之外的所有num的元素的乘积。
+     * 不用除法和时间复杂度为O（n）。
+     * @param nums
+     * @return
+     */
+    public int[] productExceptSelf(int[] nums) {
+        /*int[] output = new int[nums.length];
+        int total = 1;
+        for(int i = 0; i < nums.length; i ++){
+            total *= nums[i];
+        }
 
+        for(int i = 0; i < nums.length; i ++){
+            output[i] = total/nums[i];
+        }
+        return output;*/
 
+        int len = nums.length;
+        if (len == 0)
+            return nums;
+        int[] output = new int[len];
+        int count = 1;
+
+        //前后两次循环相乘，得出结果
+        for(int i = 0; i < len; i ++){
+            output[i] = count;
+            count *= nums[i];
+        }
+        count = 1;
+        for(int i = len - 1; i >= 0; i--){
+            output[i] *= count;
+            count *= nums[i];
+        }
+        return output;
+    }
 
 
 
@@ -843,6 +988,63 @@ public class LeetCode {
     }
 
 
+    //算法无误，时间复杂度过高
+    /**
+     * 448. Find All Numbers Disappeared in an Array
+     * 给定一个整数数组，其中1≤a[i]≤n（n =数组大小），某些元素出现两次，其他元素出现一次。
+     * 找到不出现在这个数组中的[1，n]包含的所有元素。
+     * 你可以在没有额外空间的情况下执行它，而在O（n）运行时呢？
+     * 您可以假定返回的列表不计入额外的空间。
+     * @param nums
+     * @return
+     */
+    public List<Integer> findDisappearedNumbers(int[] nums) {
+        List<Integer> list = new ArrayList<>();
+        for(int i = 0; i < nums.length; i++){
+            list.add(i + 1);
+        }
+        for(int i = 0; i < nums.length; i++){
+            int j = list.indexOf(nums[i]);
+            if(j != -1){
+                list.remove(j);
+            }
+        }
+        return list;
+    }
+
+
+
+
+    //array index 的灵活使用， 抽空复习，重做一遍
+    /**
+     * 448. Find All Numbers Disappeared in an Array
+     * 给定一个整数数组，其中1≤a[i]≤n（n =数组大小），某些元素出现两次，其他元素出现一次。
+     * 找到不出现在这个数组中的[1，n]包含的所有元素。
+     * 你可以在没有额外空间的情况下执行它，而在O（n）运行时呢？
+     * 您可以假定返回的列表不计入额外的空间。
+     * @param nums
+     * @return
+     */
+    public List<Integer> findDisappearedNumbers1(int[] nums) {
+        List<Integer> list = new ArrayList<>();
+        for(int i = 0; i < nums.length; i++){
+            int index = Math.abs(nums[i]) - 1;//把该值转换为对应数数组下标
+            nums[index] = Math.min(nums[index], -nums[index]);
+        }
+        for(int i = 0; i < nums.length; i++){
+            if(nums[i] > 0){
+                list.add(i + 1);
+            }
+        }
+        return list;
+    }
+
+
+
+
+
+
+
     //TODO 超时
     /**
      * 454. 4Sum II
@@ -1162,6 +1364,37 @@ public class LeetCode {
             max = Math.max(max, maxHere = n == 0 ? 0 : maxHere + 1);
         return max;
     }
+
+
+    /**
+     * 495. Teemo Attacking
+     * 在LOL世界，有一个名叫Teemo的英雄，他的攻击可以使他的敌人Ashe处于中毒状态。
+     * 现在，考虑到Teemo对Ashe的攻击上升时间序列和Teemo进攻的中毒时间，您需要输出
+     * Ashe处于中毒状态的总时间。
+     * 您可以假定Teemo在特定时间点的开始时发生攻击，并使Ashe立即处于中毒状态。
+     * Input: [1,4], 2
+     * Output: 4
+     *
+     * Input: [1,2], 2
+     * Output: 3
+     * @param timeSeries
+     * @param duration
+     * @return
+     */
+    public int findPoisonedDuration(int[] timeSeries, int duration) {
+        int time = 0;
+        for(int i = 0; i < timeSeries.length; i++){
+            if(i != timeSeries.length - 1){
+                time += timeSeries[1+i] - timeSeries[i] > duration
+                        ? duration : timeSeries[1+i] - timeSeries[i];
+            } else {
+                time += duration;
+            }
+        }
+        return time;
+    }
+
+
 
 
     //题目要求不清，无法解答
@@ -1607,8 +1840,19 @@ public class LeetCode {
     }
 
 
-
-
+    //垃圾题目， 放弃
+    /**
+     * 667. Beautiful Arrangement II
+     * @param n
+     * @param k
+     * @return
+     */
+    public int[] constructArray(int n, int k) {
+        int[] res = new int[n];
+        for (int i = 0, l = 1, r = n; l <= r; i++)
+            res[i] = k > 1 ? (k-- % 2 != 0 ? l++ : r--) : l++;
+        return res;
+    }
 
 
 
@@ -1626,8 +1870,9 @@ public class LeetCode {
 
         System.out.println(repeatedSubstringPattern(s));*/
         //System.out.println( distributeCandies(new int[]{1000, 1, 1, 1}) );
-        char[][] a = {{'1'},{'1'}};
-        System.out.println(numIslands1(a));
+        char[][] a ={{'X','X','X','X'},{'X','O','O','X'},{'X','X','X','X'},{'X','O','X','X'}};
+        solve(a);
+        System.out.println(a[1][2]);
     }
 
 }

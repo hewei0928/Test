@@ -12,6 +12,15 @@ public class QuickFindUF {
 
     private int count; //联通分量数量
 
+
+    public int[] getArray() {
+        return array;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
     public QuickFindUF(int i) {
         this.array = new int[i];
         for(int j = 0; j < i; j++){
@@ -21,7 +30,7 @@ public class QuickFindUF {
     }
 
     /**
-     * 使x,y位置互通, 即使x,y处值相同
+     * 使x,y位置互通, 即使x处值为y处的值
      * @param x
      * @param y
      */
