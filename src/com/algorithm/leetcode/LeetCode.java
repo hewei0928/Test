@@ -707,7 +707,6 @@ public class LeetCode {
 
 
 
-
     /**
      * 344. Reverse String
      * 倒转字符串
@@ -1989,6 +1988,32 @@ public class LeetCode {
         return result;
     }
 
+
+    //TODO 换个思路解法一目了然，日后回顾
+    /**
+     * 647. Palindromic Substrings
+     * 给定一个字符串，你的任务是计算这个字符串中有多少个回文子字符串。
+     * 具有不同起始索引或结束索引的子字符串被计为不同的子字符串，即使它们由相同的字符组成。
+     * @param s
+     * @return
+     */
+    int count = 0;
+    public int countSubstrings(String s) {
+        if (s == null || s.length() == 0) return 0;
+        int length = s.length();
+        for(int i = 0; i < length; i++){//循环字符串的数组，求以该字符为回文中心的回文数
+            getPalindromic(s, i, i);//计算奇数长度回文数
+            getPalindromic(s, i, i + 1);//计算偶数长度回文数
+        }
+        return count;
+    }
+    private void getPalindromic(String s, int i, int j){
+        while (i >= 0 && j < s.length() && s.charAt(i) == s.charAt(j)){
+            count ++;
+            i--;
+            j++;
+        }
+    }
 
 
 
