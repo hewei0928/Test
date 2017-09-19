@@ -3,9 +3,10 @@ package com.algorithm.leetcode;
 import com.algorithm.algorithms.union_find.WeightedQuickUnionUF;
 
 import java.util.*;
+import java.util.stream.Stream;
 
 /**
- * Created by Administrator
+ * Created by HW
  * on 2017/7/17 19:31.
  */
 public class LeetCode {
@@ -443,7 +444,6 @@ public class LeetCode {
     }
 
 
-    //待解决
     /**
      * 219. Contains Duplicate II
      * Given an array of integers and an integer k,
@@ -456,24 +456,13 @@ public class LeetCode {
      */
     public static boolean containsNearbyDuplicate(int[] nums, int k) {
         HashMap<Integer, Integer> map = new HashMap<>();
-        HashMap<Integer, Integer> hashMap = new HashMap<>();
         for(int i = 0; i < nums.length; i++){
             if(map.containsKey(nums[i])) {
-                if (hashMap.containsKey(nums[i]) && (i - map.get(nums[i])) > hashMap.get(nums[i])) {
-                    hashMap.put(nums[i], i - nums[i]);
-                } else if( !hashMap.containsKey(nums[i]) ) {
-                    hashMap.put(nums[i], 0);
+                if(i - map.get(nums[i]) <= k){
+                    return true;
                 }
-                map.put(nums[i], i);
-            } else {
-                map.put(nums[i], i);
             }
-        }
-
-        for(Integer i : hashMap.values()){
-            if(i <= k){
-                return true;
-            }
+            map.put(nums[i], i);
         }
         return false;
     }
@@ -665,6 +654,28 @@ public class LeetCode {
             nums[insertPos++] = 0;
         }
     }
+
+
+    //过于简单，可以跳过
+    /**
+     * 你和你的朋友一起玩下面的Nim游戏：桌上有一堆石头，每次你们轮流去掉1到3块石头。 去掉最后一块石头的人将是胜利者。
+     * 你会采取第一回合去除石头。
+     * 你们两个都很聪明，并且有最佳的游戏策略。 写一个函数，以确定是否可以赢得游戏给定堆中的宝石数量。
+     * 例如，如果堆中有4块石头，那么你永远不会赢得比赛：无论你去掉1，2或3块石头，最后一块石头总是被你的朋友删除。
+     * @param n
+     * @return
+     */
+    public boolean canWinNim(int n) {
+        /*if(n < 4){
+            return true;
+        } else {
+            return ((n - 1) % 4) == 0 || ((n - 2) % 4) == 0 || ((n - 3) % 4) == 0;
+        }*/
+        return !(n % 4 == 0);
+    }
+
+
+
 
 
     /**
@@ -948,6 +959,37 @@ public class LeetCode {
         }
         return ret;
     }
+
+
+    //换个角度思考， 豁然开朗
+    /**
+     * 419. Battleships in a Board
+     * 给定一个2D板，计算出战列舰数量。 战舰以“X”表示，空槽代表“.“。 您可以假设以下规则：
+     * 你收到一个有效的板，只由战舰或空槽。
+     * 战列舰只能水平或垂直放置。 换句话说，它们只能由1xN（1行，N列）或Nx1（N行，1列）形成，其中N可以是任何大小。
+     * 至少有一个水平或垂直的细胞分开在两艘战舰之间 - 没有相邻的战舰。
+     * @param board
+     * @return
+     */
+    public int countBattleships(char[][] board) {
+        int row = board.length;
+        if (row == 0){
+            return 0;
+        }
+        int col = board[0].length;
+        int count = 0;
+        for(int i = 0; i < row; i++){
+            for (int j = 0; j < col; j++){
+                if(board[i][j] == '.') continue;
+                if(board[i][j] == 'X' && (i == 0 || board[i-1][j] == '.') && (j == 0 || board[i][j-1] == '.')){
+                    count ++;
+                }
+            }
+        }
+        return count;
+    }
+
+
 
 
 
@@ -1409,6 +1451,7 @@ public class LeetCode {
     }
 
 
+    //可跳过不看
     /**
      * 500. Keyboard Row
      * 给定一个单词列表，返回只能用一行字母的美国键盘输入的单词
@@ -1416,13 +1459,13 @@ public class LeetCode {
      * @return 可以用一行键盘打出的字符串数组
      */
     public String[] findWords(String[] words) {
-        return null;
+        return Stream.of(words).filter(s -> s.toLowerCase().matches("[qwertyuiop]*|[asdfghjkl]*|[zxcvbnm]*")).toArray(String[]::new);
     }
 
 
 
 
-    //待解决
+    //TODO 进制转换问题以及递归的使用， 可以一看
     /**
      * 504. Base 7
      * 数字转为7进制
@@ -1430,15 +1473,77 @@ public class LeetCode {
      * @return
      */
     public static String convertToBase7(int num) {
-        String result = "";
-        while(num > 7){
-            int re = num % 7;
-            num /= 7;
-            result = re + result;
+        if (num < 0){
+            return "-" + convertToBase7(-num);
         }
-        result = num + result;
+        if (num < 7){
+            return num + "";
+        }
+        return convertToBase7(num / 7) + num % 7;
+    }
+
+
+    /**
+     * 利用队列解决
+     * 513. Find Bottom Left Tree Value
+     * 给定一个二叉树，找到树的最后一行的最左边的值。
+     * @param root
+     * @return
+     */
+    public int findBottomLeftValue(TreeNode root) {
+        Queue<TreeNode> treeNodes = new LinkedList<>();
+        int length = treeNodes.size();
+        int result = root.val;
+        treeNodes.add(root);
+        while (!treeNodes.isEmpty()){
+            int size = treeNodes.size();
+            TreeNode node = treeNodes.poll();
+            result = node.val;
+            if(node.left != null){
+                treeNodes.offer(node.left);
+            }
+            if(node.right != null){
+                treeNodes.offer(node.right);
+            }
+            for (int i = 1; i < size; i++){
+                TreeNode treeNode = treeNodes.poll();
+                if(treeNode.left != null){
+                    treeNodes.offer(treeNode.left);
+                }
+                if(treeNode.right != null){
+                    treeNodes.offer(treeNode.right);
+                }
+            }
+        }
         return result;
     }
+
+
+
+    //TODO 与自己的解法队列添加以及推出方向相反，瞬间简洁几倍，算法的精妙之处，日后反复研习
+    /**
+     * 513. Find Bottom Left Tree Value
+     * 给定一个二叉树，找到树的最后一行的最左边的值。
+     * @param root
+     * @return
+     */
+    public int findBottomLeftValue1(TreeNode root) {
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            root = queue.poll();
+            if (root.right != null)
+                queue.add(root.right);
+            if (root.left != null)
+                queue.add(root.left);
+        }
+        return root.val;
+    }
+
+
+
+
+
 
 
 
@@ -1813,6 +1918,75 @@ public class LeetCode {
         t1.left = mergeTrees(t1.left, t2.left);
         t1.right = mergeTrees(t1.right, t2.right);
         return t1;
+    }
+
+
+    //treeNode递归的使用
+    /**
+     * 637. Average of Levels in Binary Tree
+     * 求一个二叉树每层所有节点的平均值
+     * @param root
+     * @return
+     */
+    public List<Double> averageOfLevels(TreeNode root) {
+        List<Double> list = new ArrayList<>();
+        List<TreeNode> treeNodeList = new ArrayList<>();
+        list.add(root.val/1.0);
+        treeNodeList.add(root);
+        return getAverage(treeNodeList, list);
+    }
+    private List<Double> getAverage(List<TreeNode> treeNodes, List<Double> doubles){
+        List<TreeNode> treeNodeList = new ArrayList<>();
+        double sum = 0;
+        double count = 0;//统计该层有几个非空节点
+        for(TreeNode treeNode : treeNodes) {
+            TreeNode left = treeNode.left;
+            TreeNode right = treeNode.right;
+            if (left != null){
+                count ++;
+                treeNodeList.add(left);
+                sum += left.val;
+            }
+            if(right != null){
+                count++;
+                treeNodeList.add(right);
+                sum += right.val;
+            }
+        }
+        if (count != 0){
+            doubles.add(sum/count);
+            return getAverage(treeNodeList, doubles);
+        } else {
+            return doubles;
+        }
+    }
+
+
+    //TODO 队列的使用 先进先出 经常复习
+    /**
+     * 637. Average of Levels in Binary Tree
+     * 求一个二叉树每层所有节点的平均值
+     * @param root
+     * @return
+     */
+    public List<Double> averageOfLevels1(TreeNode root) {
+        List<Double> result = new ArrayList<>();
+        Queue<TreeNode> q = new LinkedList<>();
+
+        if(root == null) return result;
+        q.add(root);
+        while(!q.isEmpty()) {
+            int n = q.size();
+            double sum = 0.0;
+            for(int i = 0; i < n; i++) {
+                TreeNode node = q.poll();
+                sum += node.val;
+                if(node.left != null) q.offer(node.left);
+                if(node.right != null) q.offer(node.right);
+            }
+            result.add(sum / n);
+        }
+        return result;
     }
 
 

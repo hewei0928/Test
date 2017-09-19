@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b323eba-0475-4192-b8e3-34031d72711c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/algorithm/algorithms/union_find/QuickFindUF.java" afterPath="$PROJECT_DIR$/src/com/algorithm/algorithms/union_find/QuickFindUF.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java" afterPath="$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +18,10 @@
       <file leaf-file-name="LeetCode.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-426">
-              <caret line="481" column="31" lean-forward="false" selection-start-line="481" selection-start-column="31" selection-end-line="481" selection-end-column="31" />
+            <state relative-caret-position="23">
+              <caret line="681" column="25" lean-forward="false" selection-start-line="681" selection-start-column="25" selection-end-line="681" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#twoSums#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#twoSums#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#twoSums2#0;class#LeetCode#0" expanded="false" />
@@ -30,7 +29,7 @@
                 <element signature="docComment;method#reverse#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#reverse#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#strStr#0;class#LeetCode#0" expanded="false" />
-                <element signature="e#3318#3336#0" expanded="true" />
+                <element signature="e#3339#3357#0" expanded="true" />
                 <element signature="docComment;method#solve#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#solve#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#singleNumber#0;class#LeetCode#0" expanded="false" />
@@ -49,8 +48,6 @@
                 <element signature="method#containsDuplicate#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#containsDuplicate1#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#containsDuplicate1#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#containsNearbyDuplicate#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#containsNearbyDuplicate#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#isAnagram#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#isAnagram#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#isAnagram1#0;class#LeetCode#0" expanded="false" />
@@ -59,11 +56,8 @@
                 <element signature="method#addDigits#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#missingNumber#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#missingNumber#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#moveZeroes#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#moveZeroes#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#moveZeroes1#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#moveZeroes1#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#countBits#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#countBits#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#countBits1#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#countBits1#0;class#LeetCode#0" expanded="false" />
@@ -107,17 +101,16 @@
                 <element signature="method#islandPerimeter1#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#findComplement#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#findComplement#0;class#LeetCode#0" expanded="false" />
-                <element signature="e#32353#32378#0" expanded="false" />
+                <element signature="e#33278#33303#0" expanded="false" />
                 <element signature="docComment;method#findComplement1#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#findComplement1#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#findMaxConsecutiveOnes#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#findMaxConsecutiveOnes#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#findMaxConsecutiveOnes1#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#findMaxConsecutiveOnes1#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#findPoisonedDuration#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#nextGreaterElement#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#findWords#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#convertToBase7#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#convertToBase7#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;method#detectCapitalUse#0;class#LeetCode#0" expanded="false" />
                 <element signature="docComment;field#urls#0;class#LeetCode#0" expanded="false" />
                 <element signature="method#encode#0;class#LeetCode#0" expanded="false" />
@@ -156,17 +149,22 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="TreeNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/TreeNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="QuickFindUF.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithms/union_find/QuickFindUF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
+            <state relative-caret-position="644">
               <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-              <folding>
-                <element signature="e#308#309#0" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
-                <element signature="e#365#366#0" expanded="true" />
-                <element signature="e#393#394#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -174,7 +172,7 @@
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithms/union_find/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
+            <state relative-caret-position="667">
               <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
               <folding />
             </state>
@@ -184,8 +182,8 @@
       <file leaf-file-name="QuickUnionUF.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithms/union_find/QuickUnionUF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="63" column="28" lean-forward="true" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+            <state relative-caret-position="1403">
+              <caret line="63" column="28" lean-forward="false" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -195,7 +193,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithms/union_find/WeightedQuickUnionUF.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1541">
-              <caret line="75" column="20" lean-forward="true" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
+              <caret line="75" column="20" lean-forward="false" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
               <folding>
                 <element signature="docComment;class#WeightedQuickUnionUF#0" expanded="false" />
               </folding>
@@ -302,9 +300,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="25" />
-    <option name="y" value="38" />
-    <option name="width" value="1126" />
+    <option name="x" value="59" />
+    <option name="y" value="283" />
+    <option name="width" value="1378" />
     <option name="height" value="780" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -344,9 +342,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -428,39 +423,12 @@
               <option name="myItemId" value="algorithms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="union_find" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1065,11 +1033,18 @@
       <workItem from="1505182133462" duration="37000" />
       <workItem from="1505580065421" duration="9274000" />
       <workItem from="1505621408196" duration="18471000" />
+      <workItem from="1505698480160" duration="13000" />
+      <workItem from="1505723884053" duration="10390000" />
+      <workItem from="1505738782453" duration="59000" />
+      <workItem from="1505738994209" duration="1385000" />
+      <workItem from="1505747002774" duration="3982000" />
+      <workItem from="1505784402639" duration="28000" />
+      <workItem from="1505792277752" duration="6000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174276000" />
+    <option name="totallyTimeSpent" value="190139000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1081,12 +1056,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="25" y="38" width="1126" height="780" extended-state="0" />
-    <editor active="true" />
+    <frame x="59" y="283" width="1378" height="780" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2857143" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2843895" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1099,14 +1073,13 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3625192" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23195085" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.015947467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.015933232" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1114,6 +1087,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280507" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1163,7 +1137,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1331,16 +1305,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/TreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithms/union_find/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
+        <state relative-caret-position="667">
           <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
           <folding />
         </state>
@@ -1348,42 +1315,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithms/union_find/QuickUnionUF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="63" column="28" lean-forward="true" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+        <state relative-caret-position="1403">
+          <caret line="63" column="28" lean-forward="false" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithms/union_find/QuickFindUF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
+        <state relative-caret-position="644">
           <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-          <folding>
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/algorithms/union_find/WeightedQuickUnionUF.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1541">
-          <caret line="75" column="20" lean-forward="true" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
+          <caret line="75" column="20" lean-forward="false" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
           <folding>
             <element signature="docComment;class#WeightedQuickUnionUF#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/algorithm/leetcode/LeetCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-426">
-          <caret line="481" column="31" lean-forward="false" selection-start-line="481" selection-start-column="31" selection-end-line="481" selection-end-column="31" />
+        <state relative-caret-position="23">
+          <caret line="681" column="25" lean-forward="false" selection-start-line="681" selection-start-column="25" selection-end-line="681" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#twoSums#0;class#LeetCode#0" expanded="false" />
             <element signature="method#twoSums#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#twoSums2#0;class#LeetCode#0" expanded="false" />
@@ -1391,7 +1360,7 @@
             <element signature="docComment;method#reverse#0;class#LeetCode#0" expanded="false" />
             <element signature="method#reverse#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#strStr#0;class#LeetCode#0" expanded="false" />
-            <element signature="e#3318#3336#0" expanded="true" />
+            <element signature="e#3339#3357#0" expanded="true" />
             <element signature="docComment;method#solve#0;class#LeetCode#0" expanded="false" />
             <element signature="method#solve#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#singleNumber#0;class#LeetCode#0" expanded="false" />
@@ -1410,8 +1379,6 @@
             <element signature="method#containsDuplicate#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#containsDuplicate1#0;class#LeetCode#0" expanded="false" />
             <element signature="method#containsDuplicate1#0;class#LeetCode#0" expanded="false" />
-            <element signature="docComment;method#containsNearbyDuplicate#0;class#LeetCode#0" expanded="false" />
-            <element signature="method#containsNearbyDuplicate#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#isAnagram#0;class#LeetCode#0" expanded="false" />
             <element signature="method#isAnagram#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#isAnagram1#0;class#LeetCode#0" expanded="false" />
@@ -1420,11 +1387,8 @@
             <element signature="method#addDigits#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#missingNumber#0;class#LeetCode#0" expanded="false" />
             <element signature="method#missingNumber#0;class#LeetCode#0" expanded="false" />
-            <element signature="docComment;method#moveZeroes#0;class#LeetCode#0" expanded="false" />
             <element signature="method#moveZeroes#0;class#LeetCode#0" expanded="false" />
-            <element signature="docComment;method#moveZeroes1#0;class#LeetCode#0" expanded="false" />
             <element signature="method#moveZeroes1#0;class#LeetCode#0" expanded="false" />
-            <element signature="docComment;method#countBits#0;class#LeetCode#0" expanded="false" />
             <element signature="method#countBits#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#countBits1#0;class#LeetCode#0" expanded="false" />
             <element signature="method#countBits1#0;class#LeetCode#0" expanded="false" />
@@ -1468,17 +1432,16 @@
             <element signature="method#islandPerimeter1#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#findComplement#0;class#LeetCode#0" expanded="false" />
             <element signature="method#findComplement#0;class#LeetCode#0" expanded="false" />
-            <element signature="e#32353#32378#0" expanded="false" />
+            <element signature="e#33278#33303#0" expanded="false" />
             <element signature="docComment;method#findComplement1#0;class#LeetCode#0" expanded="false" />
             <element signature="method#findComplement1#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#findMaxConsecutiveOnes#0;class#LeetCode#0" expanded="false" />
             <element signature="method#findMaxConsecutiveOnes#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#findMaxConsecutiveOnes1#0;class#LeetCode#0" expanded="false" />
             <element signature="method#findMaxConsecutiveOnes1#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#findPoisonedDuration#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#nextGreaterElement#0;class#LeetCode#0" expanded="false" />
-            <element signature="docComment;method#findWords#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#convertToBase7#0;class#LeetCode#0" expanded="false" />
-            <element signature="method#convertToBase7#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#detectCapitalUse#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;field#urls#0;class#LeetCode#0" expanded="false" />
             <element signature="method#encode#0;class#LeetCode#0" expanded="false" />
