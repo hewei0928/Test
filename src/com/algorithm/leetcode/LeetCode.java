@@ -95,6 +95,22 @@ public class LeetCode {
     }
 
 
+    //垃圾题目跳过
+    /**
+     * 122. Best Time to Buy and Sell Stock II
+     * @param prices
+     * @return
+     */
+    public int maxProfit(int[] prices) {
+        int count = 0;
+        for(int i = 0; i < prices.length-1; i++){
+            if(prices[i + 1] > prices[i]) count += prices[i + 1] - prices[i];
+        }
+        return count;
+    }
+
+
+
     /**
      * 128. Longest Consecutive Sequence
      * 给定一个未排序的整数数组，找到最长连续元素序列的长度。
@@ -287,6 +303,34 @@ public class LeetCode {
     }
 
 
+    /**
+     * 167. Two Sum II - Input array is sorted
+     * 给定一个已经按升序排序的整数数组，找到两个数字，使它们相加到一个特定的目标数。
+     * 函数twoSum应该返回两个数字的索引，使它们相加到目标，其中index1必须小于index2。
+     * 请注意，您返回的答案（index1和index2）都不是基于零的。
+     * 您可以假设每个输入都只有一个解决方案，您可能不会使用相同的元素两次。
+     * @param numbers
+     * @param target
+     * @return
+     */
+    public int[] twoSum(int[] numbers, int target) {
+        int[] result = new int[2];
+        Map<Integer, Integer> map = new HashMap<>();
+        for(int i = 0; i < numbers.length; i++){
+            if(!map.containsKey(numbers[i])) {
+                map.put(target - numbers[i], i + 1);
+            } else {
+                result[0] = map.get(numbers[i]);
+                result[1] = i + 1;
+                break;
+            }
+        }
+        return result;
+    }
+
+
+
+
 
 
     /**
@@ -403,6 +447,21 @@ public class LeetCode {
         }
         return count;
     }
+
+
+    /**
+     * 216. Combination Sum III
+     * 查找加数为n的k个数的所有可能组合，只能使用1到9之间的数字，并且每个组合应该是一组唯一的数字。
+     * @param k
+     * @param n
+     * @return
+     */
+    /*public List<List<Integer>> combinationSum3(int k, int n) {
+
+
+    }*/
+
+
 
 
 
@@ -1814,6 +1873,67 @@ public class LeetCode {
         }
         return result;
     }
+
+
+    //解法无误，时间复杂度为O(n^2)过于复杂
+    /**
+     * 565. Array Nesting
+     * 给出了由N个不同整数组成的零索引数组A. 该数组包含[0，N-1]范围内的所有整数。
+     * 设置0 <= K <N的S [K]定义如下：
+     * S [K] = {A [K]，A [A [K]]，A [A [A [K]]]，...}。
+     * 集合S [K]对于每个K是有限的，不应包含重复项。
+     * 写一个给定由N个整数组成的数组A的函数，返回该数组的最大集合S [K]的大小。
+     * @param nums
+     * @return
+     */
+    public int arrayNesting(int[] nums) {
+        if (nums.length == 0) return 0;
+        int count = 0;
+        for(int i = 0; i < nums.length; i++){
+            int sum = 1;
+            int k = i;
+            while (nums[k] != i){
+                sum++;
+                k = nums[k];
+            }
+            count = Math.max(count, sum);
+        }
+        return count;
+    }
+
+
+    //对自己解法的改进，加入了已访问标识
+    /**
+     * 565. Array Nesting
+     * 给出了由N个不同整数组成的零索引数组A. 该数组包含[0，N-1]范围内的所有整数。
+     * 设置0 <= K <N的S [K]定义如下：
+     * S [K] = {A [K]，A [A [K]]，A [A [A [K]]]，...}。
+     * 集合S [K]对于每个K是有限的，不应包含重复项。
+     * 写一个给定由N个整数组成的数组A的函数，返回该数组的最大集合S [K]的大小。
+     * @param nums
+     * @return
+     */
+    public int arrayNesting1(int[] nums) {
+        boolean[] visited = new boolean[nums.length];
+        int res = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (!visited[i]) {
+                int start = nums[i], count = 0;
+                do {
+                    start = nums[start];
+                    count++;
+                    visited[start] = true;
+                }
+                while (start != nums[i]);
+                res = Math.max(res, count);
+            }
+        }
+        return res;
+    }
+
+
+
+
 
 
 
