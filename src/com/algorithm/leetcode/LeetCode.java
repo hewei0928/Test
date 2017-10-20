@@ -35,7 +35,7 @@ public class LeetCode {
     }
 
 
-    //HashMap的使用 及其get方法的时间复杂度
+    //HashMap的使用 及其get方法的时间复杂度, 已掌握
     /**
      * 1. two sum
      * @param nums
@@ -2189,9 +2189,28 @@ public class LeetCode {
 
         System.out.println(repeatedSubstringPattern(s));*/
         //System.out.println( distributeCandies(new int[]{1000, 1, 1, 1}) );
-        char[][] a ={{'X','X','X','X'},{'X','O','O','X'},{'X','X','X','X'},{'X','O','X','X'}};
+        /*char[][] a ={{'X','X','X','X'},{'X','O','O','X'},{'X','X','X','X'},{'X','O','X','X'}};
         solve(a);
-        System.out.println(a[1][2]);
+        System.out.println(a[1][2]);*/
+        System.out.println(checkIdCard("460104199310290312"));
+    }
+
+    private static boolean checkIdCard(String idCard) {
+        if(idCard.length() != 18)
+            return false;
+        int[] coefficients = {7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2};
+        String[] lastNumber = {"1", "0", "X", "9", "8", "7", "6", "5", "4", "3", "2"};
+        int result = 0;
+        for(int i = 0; i < 17; i++){
+            result += Integer.parseInt(String.valueOf(idCard.charAt(i))) * coefficients[i];
+        }
+        return String.valueOf(idCard.charAt(17)).equals(lastNumber[result % 11]);
+    }
+
+
+    public static void main(String[] args) {
+        Boolean l = true;
+        System.out.println(l.eq);
     }
 
 }
