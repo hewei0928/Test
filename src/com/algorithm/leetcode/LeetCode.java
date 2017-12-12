@@ -1396,7 +1396,7 @@ public class LeetCode {
 //        Long bit = Long.highestOneBit(num);//返回的值为最高位为1，其余位为0的十进制表示
 //        int total = 1;
 //        for(int i = 1; i < bit; i++){
-//            total += Math.pow(2, i);
+//            total += math.pow(2, i);
 //        }
 //        result = total ^ num;
 //        return result;
@@ -2205,12 +2205,6 @@ public class LeetCode {
             result += Integer.parseInt(String.valueOf(idCard.charAt(i))) * coefficients[i];
         }
         return String.valueOf(idCard.charAt(17)).equals(lastNumber[result % 11]);
-    }
-
-
-    public static void main(String[] args) {
-        Boolean l = true;
-        System.out.println(l.eq);
     }
 
 }

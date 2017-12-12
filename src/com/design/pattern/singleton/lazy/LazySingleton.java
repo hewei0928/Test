@@ -1,6 +1,6 @@
 package com.design.pattern.singleton.lazy;
 
-import org.jetbrains.annotations.Contract;
+
 
 /**
  * Created by Administrator on 2017/6/27.
@@ -32,7 +32,7 @@ public class LazySingleton {
         private static LazySingleton instance = new LazySingleton();
     }
 
-    @Contract(pure = true)
+
     public static LazySingleton getInstance2(){
         return SingletonFactory.instance;
     }

@@ -1,8 +1,5 @@
-package com.algorithm.algorithms.Math;
+package com.algorithm.algorithms.math;
 
-import edu.princeton.cs.algs4.StdDraw;
-
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -50,7 +47,7 @@ public class Math {
 
 
     /**
-     * ¼ÆËãÆ½·½¸ù
+     * ï¿½ï¿½ï¿½ï¿½Æ½ï¿½ï¿½ï¿½ï¿½
      * @param n
      * @param a
      * @return
@@ -90,7 +87,7 @@ public class Math {
     }
 
     /**
-     * ¼ÆËãÖ±½ÇÈý½ÇÐÎÐ±±ß
+     * ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½
      * @param a
      * @param b
      * @return
@@ -104,7 +101,7 @@ public class Math {
     }
 
     /**
-     * ¶þ·Ö²éÕÒ·¨
+     * ï¿½ï¿½ï¿½Ö²ï¿½ï¿½Ò·ï¿½
      * @param key
      * @param a
      * @param low
@@ -128,10 +125,10 @@ public class Math {
     }
 
     /**
-     * ¶þ·Ö²éÕÒ
+     * ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½
      * @param key
-     * @param a ´ÓÐ¡µ½´óÓÐÐòÊý×é
-     * @return Êý×éÄÚË÷Òý -1¼´Îª²»´æÔÚ
+     * @param a ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     * @return ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ -1ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public static int BinarySearch(int key, int[] a){
         int min = 0;
