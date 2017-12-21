@@ -1,13 +1,17 @@
 package com.design.pattern.observer.one2ManyPushMess;
 
+
 /**
- * Created by Administrator on 2017/7/7.
+ * 主题接口
  */
 public interface Subject {
 
-    public void addObserver(Observer observer);
+    /**
+     * 新订阅者订阅主题
+     * @param observer
+     */
+    void registerObserver(Observer observer);
 
-    public void deleteObserver(Observer observer);
+    void removeObserver()
 
-    public void notifyObverser();
 }
